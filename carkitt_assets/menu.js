@@ -1,4 +1,18 @@
 	
+$(document).ready(function() {
+
+	$("#controls-box").hover(
+		function(){
+			$("#controls-box-menu").fadeIn('fast', function() {
+			});
+		},
+		function(){
+			$("#controls-box-menu").fadeOut('fast', function() {
+			});
+		}
+	);
+});
+
 	function okFunction(){
 	//-------------------------------------------------------------------
 		
