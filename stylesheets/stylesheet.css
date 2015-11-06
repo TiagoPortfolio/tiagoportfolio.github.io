@@ -373,7 +373,6 @@ Full-Width Styles
 #introduction {
   padding: 5px 10px;
   border-radius: 10px;
-  background: #313131;
   box-shadow: 0px 0px 15px white;
 }
 
@@ -453,28 +452,6 @@ img.portrait{
   font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
   font-weight: lighter;
   text-shadow: #111 1px 4px 1px;
-}
-
-.bubble {
-  position: relative;
-  background: #313131;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-}
-
-.bubble:after {
-  content: '';
-  position: absolute;
-  border-style: solid;
-  border-width: 0 15px 15px;
-  border-color: #313131 transparent;
-  display: block;
-  width: 0;
-  z-index: 1;
-  margin-left: -15px;
-  top: -15px;
-  left: 50%;
 }
 
 .button {
