@@ -29,6 +29,10 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
+html{
+  background: #212121;
+}
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -50,12 +54,16 @@ Theme Styles
 
 body {
   box-sizing: border-box;
-  color:#373737;
-  background: #212121;
+  color:#ffecec;
   font-size: 16px;
   font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  background: -moz-linear-gradient(top, #6B6B6B, #212121);
+  background: -webkit-linear-gradient(top, #6B6B6B, #212121);
+  background: -ms-linear-gradient(top, #6B6B6B, #212121);
+  background: -o-linear-gradient(top, #6B6B6B, #212121);
+  background: linear-gradient(top, #6B6B6B, #212121);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -267,10 +275,18 @@ Full-Width Styles
   margin: 0 auto;
 }
 
+#header_wrap .inner{
+  max-width: 100%;
+}
+
+#header_wrap .inner > div{
+  position: absolute;
+}
+
 #forkme_banner {
   display: block;
   position: absolute;
-  top:0;
+  top:-1px;
   right: 10px;
   z-index: 10;
   padding: 10px 50px 10px 10px;
@@ -283,32 +299,28 @@ Full-Width Styles
 }
 
 #header_wrap {
-  background: #212121;
-  background: -moz-linear-gradient(top, #373737, #212121);
-  background: -webkit-linear-gradient(top, #373737, #212121);
-  background: -ms-linear-gradient(top, #373737, #212121);
-  background: -o-linear-gradient(top, #373737, #212121);
-  background: linear-gradient(top, #373737, #212121);
 }
 
 #header_wrap .inner {
-  padding: 50px 10px 30px 10px;
+  padding: 15px 10px 30px 10px;
 }
 
 #project_title {
   margin: 0;
-  color: #fff;
-  font-size: 42px;
+  color: #FFF;
+  font-size: 35px;
   font-weight: 700;
-  text-shadow: #111 0px 0px 10px;
+  text-shadow: #111 0px 5px 10px;
 }
 
 #project_tagline {
   color: #fff;
   font-size: 24px;
+  margin: 0;
   font-weight: 300;
   background: none;
-  text-shadow: #111 0px 0px 10px;
+  text-shadow: #111 0px 5px 10px;
+  padding: 0;
 }
 
 #downloads {
@@ -351,17 +363,16 @@ Full-Width Styles
 }
 
 #main_content_wrap {
-  background: #f2f2f2;
-  border-top: 1px solid #111;
-  border-bottom: 1px solid #111;
+}
+
+#main_content_wrap .inner{
+  text-align: center;
 }
 
 #main_content {
-  padding-top: 40px;
 }
 
 #footer_wrap {
-  background: #212121;
 }
 
 
@@ -420,7 +431,19 @@ Small Device Styles
 }
 
 img.portrait{
-  float: left;
-  margin-right: 25px;
   border-radius: 60px;
+}
+
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
+
+.highlight{
+  font-size: 25px;
+  font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
+  font-weight: lighter;
 }
