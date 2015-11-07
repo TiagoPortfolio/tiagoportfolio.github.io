@@ -103,6 +103,7 @@ h6 {
 
 p {
   margin: 10px 0 15px 0;
+  text-shadow: 0px 2px 2px black;
 }
 
 footer p {
@@ -451,7 +452,7 @@ img.portrait{
   font-size: 25px;
   font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
   font-weight: lighter;
-  text-shadow: #111 1px 4px 1px;
+  text-shadow: #111 3px 3px 1px;
 }
 
 .button {
