@@ -4,9 +4,15 @@
 <head>
   <meta charset='utf-8'>
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
-  <meta name="description" content="Tiago Sousa - Portfolio : Web Developer ">
+  <meta name="description" content="Tiago Sousa - Web Developer : Portfolio">
 
   <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/page_transitions/animations.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/page_transitions/component.css">
+
+  <script type="text/javascript" src="javascripts/jquery-1.11.2.min.js"></script>
+  <script type="text/javascript" src="javascripts/page_transitions/modernizr.custom.js"></script>
+  <script type="text/javascript" src="javascripts/page_transitions/pagetransitions.js"></script>
 
   <title>Tiago Sousa - Portfolio</title>
 </head>
@@ -25,33 +31,47 @@
     </header>
   </div>
 
-  <!-- MAIN CONTENT -->
-  <div id="main_content_wrap" class="outer">
-    <div class="inner">
-      <img class="portrait" src="images/tiagosousa.png"/>
-      <h1 id="project_title">Tiago Sousa</h1>
-      <h2 id="project_tagline">Web Developer </h2>
+  <!-- PAGE TRANSITION -->
+  <div id="pt-main" class="pt-perspective">
+    <!-- HOME PAGE -->
+    <div class="pt-page pt-page-1">
+      <!-- MAIN CONTENT -->
+      <div id="main_content_wrap" class="outer">
+        <div class="inner">
+          <img class="portrait" src="images/tiagosousa.png"/>
+          <h1 id="project_title">Tiago Sousa</h1>
+          <h2 id="project_tagline">Web Developer </h2>
+        </div>
+
+        <!-- INTRODUCTION -->
+        <section id="introduction" class="inner">
+          <p>While taking my B.Sc. in Computer Science and Engineering I discovered the amazing world of Web Development all by myself. I was glad that I found really soon my true area of interest:
+          <br><span class="highlight">Web Development</span><br>
+          Suddenly studies turned out to be boring because I was learning so much more working in the Web world and learning is my drive and motivation.
+          I like everything about web technologies and developing easy, fast, brainless features to use so users can do everything naturally to achieve a top user experience!</p>
+        </section>
+
+        <!-- VIEW PROJECTS BUTTON -->
+        <section data-page="2" class="inner pt-button">
+          <div class="button">View Projects</div>
+        </section>
+      </div>
     </div>
 
-    <!-- INTRODUCTION -->
-    <section id="introduction" class="inner">
-      <p>While taking my B.Sc. in Computer Science and Engineering I discovered the amazing world of Web Development all by myself.
-      I was glad that I found really soon my true area of interest:
-      <br><span class="highlight">Web Development</span><br>
-      Suddenly studies turned out to be boring because I was learning so much more working in the Web world and learning is my drive and motivation.
-      I like everything about web technologies and developing easy, fast, brainless features to use so users can do everything naturally to achieve a top user experience!</p>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="main_content" class="inner">
-      <div class="button">View Projects</div>
-    </section>
-    <section id="main_content" class="inner" style="display:none;">
-      <p>iRave Smartwatch Prototype - <a href="http://tiagoportfolio.github.io/smartwatch.html">iRave</a></p>
-    </section>
-    <section id="main_content" class="inner" style="display:none;">
-      <p>Kitt Car Prototype - <a href="http://tiagoportfolio.github.io/carkitt.html">Kitt</a></p>
-    </section>
+    <!-- PROJECTS PAGE-->
+    <div class="pt-page pt-page-2 outer">
+      <div class="inner">
+        <img class="portrait" src="images/tiagosousa.png"/>
+        <h1 id="project_title">Tiago Sousa</h1>
+        <h2 id="project_tagline">Projects </h2>
+      </div>
+      <section class="inner">
+        <p>iRave Smartwatch Prototype - <a href="http://tiagoportfolio.github.io/smartwatch.html">iRave</a></p>
+      </section>
+      <section class="inner">
+        <p>Kitt Car Prototype - <a href="http://tiagoportfolio.github.io/carkitt.html">Kitt</a></p>
+      </section>
+    </div>
   </div>
 
   <!-- FOOTER  -->
@@ -61,8 +81,6 @@
       <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
     </footer>
   </div>
-
-
 
 </body>
 </html>

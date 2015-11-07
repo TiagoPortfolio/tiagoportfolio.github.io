@@ -29,8 +29,8 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-html{
-  background-image: url(../images/grey_background.jpg);
+html {
+  overflow: hidden;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -53,12 +53,13 @@ Theme Styles
 *******************************************************************************/
 
 body {
-  box-sizing: border-box;
-  color:#ffecec;
-  font-size: 16px;
-  font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box !important;
+  color:#ffecec !important;
+  font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif !important;
+  line-height: 1.5 !important;
+  -webkit-font-smoothing: antialiased !important;
+  background-image: url(../images/grey_background.jpg) !important;
+  background-size: cover !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -98,7 +99,7 @@ h6 {
 
 p {
   margin: 10px 0 15px 0;
-  text-shadow: 0px 2px 2px black;
+  text-shadow: 1px 2px 2px black;
 }
 
 footer p {
@@ -367,10 +368,17 @@ Full-Width Styles
 }
 
 #introduction {
+  font-weight: lighter;
+  font-size: 17px;
+  font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
   padding: 5px 10px;
   border-radius: 10px;
-  box-shadow: 0px 0px 15px white;
-  background: rgba(192,192,192,0.2);
+  box-shadow: 0px 0px 60px rgba(192, 192, 192, 0.3);
+  background: rgba(192,192,192,0.1);
+}
+
+#footer_wrap {
+  margin-top: -3%;
 }
 
 #footer_wrap footer:first-child {
@@ -445,7 +453,7 @@ img.portrait{
 }
 
 .highlight{
-  font-size: 25px;
+  font-size: 20px;
   font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
   font-weight: lighter;
   text-shadow: #111 2px 2px 1px;
