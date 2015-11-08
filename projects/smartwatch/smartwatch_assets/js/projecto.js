@@ -7,16 +7,16 @@ $(document).ready(function() {
 	main.imageNumber = 1;
 	main.hologramImages = {
 		"staff" : [
-		"smartwatch_assets/images/path_staff.png", "smartwatch_assets/images/path_staff_1.png", "smartwatch_assets/images/path_staff_2.png"
+		"projects/smartwatch/smartwatch_assets/images/path_staff.png", "projects/smartwatch/smartwatch_assets/images/path_staff_1.png", "projects/smartwatch/smartwatch_assets/images/path_staff_2.png"
 		],
 		"cesar" : [
-		"smartwatch_assets/images/path_cesar.png", "smartwatch_assets/images/path_cesar_1.png", "smartwatch_assets/images/path_cesar_2.png"
+		"projects/smartwatch/smartwatch_assets/images/path_cesar.png", "projects/smartwatch/smartwatch_assets/images/path_cesar_1.png", "projects/smartwatch/smartwatch_assets/images/path_cesar_2.png"
 		],
 		"magda" : [
-		"smartwatch_assets/images/path_magda.png", "smartwatch_assets/images/path_magda_1.png", "smartwatch_assets/images/path_magda_2.png"
+		"projects/smartwatch/smartwatch_assets/images/path_magda.png", "projects/smartwatch/smartwatch_assets/images/path_magda_1.png", "projects/smartwatch/smartwatch_assets/images/path_magda_2.png"
 		],
 		"tiago" : [
-		"smartwatch_assets/images/path_tiago.png", "smartwatch_assets/images/path_tiago_1.png", "smartwatch_assets/images/path_tiago_2.png"
+		"projects/smartwatch/smartwatch_assets/images/path_tiago.png", "projects/smartwatch/smartwatch_assets/images/path_tiago_1.png", "projects/smartwatch/smartwatch_assets/images/path_tiago_2.png"
 		]
 	};
 	main.pedidosProntos = [5];
@@ -803,13 +803,13 @@ getClose = function(screen){
 	    	removeHologram(main.screen);
 	    	setTimeout(function(){
 	    		if(screen == "findStaff")
-		    		$('#chegou img').attr("src", "smartwatch_assets/images/staff.svg");
+		    		$('#chegou img').attr("src", "projects/smartwatch/smartwatch_assets/images/staff.svg");
 		    	else if(screen == "findCesar")
-		    		$('#chegou img').attr("src", "smartwatch_assets/images/cesar.png");
+		    		$('#chegou img').attr("src", "projects/smartwatch/smartwatch_assets/images/cesar.png");
 		    	else if(screen == "findMagda")
-		    		$('#chegou img').attr("src", "smartwatch_assets/images/magda.png");
+		    		$('#chegou img').attr("src", "projects/smartwatch/smartwatch_assets/images/magda.png");
 		    	else if(screen == "findTiago")
-		    		$('#chegou img').attr("src", "smartwatch_assets/images/tiago.png");
+		    		$('#chegou img').attr("src", "projects/smartwatch/smartwatch_assets/images/tiago.png");
 
 		    	$(".simulation-buttons").fadeOut("fast");
 	    		$('#chegou').fadeIn("fast");
