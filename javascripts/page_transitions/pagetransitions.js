@@ -58,7 +58,7 @@ $(document).ready(function($) {
 		function nextPage(options ) {
 			var animation = (options.animation) ? options.animation : options;
 
-			if( isAnimating ) {
+			if( isAnimating || current == options.showPage) {
 				return false;
 			}
 
@@ -66,7 +66,7 @@ $(document).ready(function($) {
 
 			var $currPage = $pages.eq( current );
 
-			if(options.showPage){
+			if(typeof options.showPage != 'undefined'){
 				if( options.showPage < pagesCount) {
 					current = options.showPage;
 				}

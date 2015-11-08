@@ -9,12 +9,12 @@
   <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
   <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/page_transitions/animations.css">
   <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/page_transitions/component.css">
-  <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+   <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/animate.min.css">
 
-  <script type="text/javascript" src="javascripts/jquery-1.11.2.min.js"></script>
-  <script type="text/javascript" src="javascripts/page_transitions/modernizr.custom.js"></script>
-  <script type="text/javascript" src="javascripts/page_transitions/pagetransitions.js"></script>
+  <script type="text/javascript" src="javascripts/jquery-1.11.2.min.js"defer></script>
+  <script type="text/javascript" src="javascripts/main.js" defer></script>
+  <script type="text/javascript" src="javascripts/page_transitions/modernizr.custom.js" defer></script>
+  <script type="text/javascript" src="javascripts/page_transitions/pagetransitions.js" async></script>
 
   <title>Tiago Sousa - Portfolio</title>
 </head>
@@ -24,11 +24,11 @@
   <!-- HEADER -->
   <div id="header_wrap" class="outer">
     <header class="inner">
-      <div style="left: 10px">
+      <div data-page="1" class="pt-button anim" style="left: 10px">
         Tiago Sousa - Portfolio
       </div>
-      <div style="right: 10px">
-        Portfolio
+      <div data-page="2" class="pt-button anim" style="right: 10px">
+        Projects
       </div>
     </header>
   </div>
@@ -49,12 +49,12 @@
         <section id="introduction" class="inner">
           <p>While taking my B.Sc. in Computer Science and Engineering I discovered the amazing world of web all by myself. I was glad that I found really soon my true area of interest:
           <br><span class="highlight">Web Development</span><br>
-          Suddenly studies turned out to be boring because I was learning so much more working in the Web world and learning is my drive and motivation.
+          Suddenly studies turned out to be boring because I was learning so much more working in the web world and learning is my drive and motivation.
           I like everything about web technologies and developing easy, fast, brainless features to use so users can do everything naturally to achieve a top user experience!</p>
         </section>
 
         <!-- VIEW PROJECTS BUTTON -->
-        <section data-page="2" class="inner pt-button">
+        <section data-page="2" class="inner pt-button view_projects_bt">
           <div class="button">View Projects</div>
         </section>
       </div>

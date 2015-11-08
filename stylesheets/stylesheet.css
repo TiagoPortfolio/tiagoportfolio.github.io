@@ -274,6 +274,8 @@ Full-Width Styles
 
 #header_wrap .inner > div{
   position: absolute;
+  -webkit-animation-duration: 0.7s;
+  animation-duration: 0.7s;
 }
 
 #forkme_banner {
@@ -478,6 +480,20 @@ img.portrait{
 }
 
 /*VIEW PROJECTS BUTTON*/
-[data-page="2"] {
+.view_projects_bt {
   padding-top: 40px;
+}
+
+#pt-main{
+  overflow: hidden;
+}
+
+@font-face {
+  font-family:"Open Sans";
+  src: url("fonts/OpenSans-Light.ttf") /* TTF file for CSS3 browsers */
+}
+
+@font-face {
+  font-family:"Josefin Sans";
+  src: url("fonts/JosefinSans-Regular.ttf") /* TTF file for CSS3 browsers */
 }
