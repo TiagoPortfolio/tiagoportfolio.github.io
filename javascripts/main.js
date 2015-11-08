@@ -1,4 +1,6 @@
 $(document).ready(function(){
+
+	// HEADER ANIMATIONS
 	var animations = [
     'bounce',	'flash', 'rubberBand',
 		'shake',	'swing', 'tada',
@@ -7,9 +9,15 @@ $(document).ready(function(){
 
 	$('.anim').click(function(e){
 		e.preventDefault();
-		$(this).removeClass().addClass('animated ' + animations[Math.floor(Math.random()*animations.length)])
+		if($(this).hasClass('focused'))
+			return false;
+		$("#header_wrap a.focused").toggleClass("focused");
+		$(this).toggleClass('focused');
+		var randomAnimation = animations[Math.floor(Math.random()*animations.length)];
+
+		$(this).addClass('animated ' + randomAnimation)
 			.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-				$(this).removeClass();
+				$(this).removeClass('animated ' + randomAnimation);
 			});
 	});
 });

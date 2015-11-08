@@ -853,7 +853,7 @@ removeHologram = function(screen){
 		});
 		$("#"+screen+"Screen").fadeOut("fast");
 		$("#hologramScreen").fadeOut("fast");
-			// $(".simulation-buttons").fadeOut("fast");
+		$(".simulation-buttons").fadeOut("fast");
 		}
 	};
 

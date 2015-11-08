@@ -273,9 +273,10 @@ Full-Width Styles
 }
 
 #header_wrap .inner > div{
+  display: flex;
   position: absolute;
-  -webkit-animation-duration: 0.7s;
-  animation-duration: 0.7s;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
 }
 
 #forkme_banner {
@@ -294,6 +295,7 @@ Full-Width Styles
 }
 
 #header_wrap {
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 #header_wrap .inner {
