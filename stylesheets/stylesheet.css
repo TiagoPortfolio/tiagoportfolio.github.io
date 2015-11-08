@@ -29,10 +29,6 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-html {
-  overflow: hidden;
-}
-
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -369,8 +365,8 @@ Full-Width Styles
 
 #introduction {
   font-weight: lighter;
-  font-size: 17px;
-  font-family: 'Josefin Sans', sans-serif;
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
   padding: 5px 10px;
   border-radius: 10px;
   box-shadow: 0px 0px 60px rgba(192, 192, 192, 0.3);
@@ -479,4 +475,9 @@ img.portrait{
   background: rgba(255,255,255,.8);
   color: #000;
   outline: 1px solid #999;
+}
+
+/*VIEW PROJECTS BUTTON*/
+[data-page="2"] {
+  padding-top: 40px;
 }
