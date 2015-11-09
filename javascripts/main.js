@@ -2,9 +2,9 @@ $(document).ready(function(){
 
 	// HEADER ANIMATIONS
 	var animations = [
-    'bounce',	'flash', 'rubberBand',
-		'shake',	'swing', 'tada',
-		'wobble',	'jello', 'flip'
+    'flash', 'rubberBand',
+		'swing', 'wobble',
+		'jello', 'flip'
 	];
 
 	$('.anim').click(function(e){
@@ -14,7 +14,7 @@ $(document).ready(function(){
 		$("#header_wrap a.focused").toggleClass("focused");
 		$(this).toggleClass('focused');
 		var randomAnimation = animations[Math.floor(Math.random()*animations.length)];
-
+		console.log(randomAnimation);
 		$(this).addClass('animated ' + randomAnimation)
 			.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
 				$(this).removeClass('animated ' + randomAnimation);

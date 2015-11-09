@@ -275,8 +275,6 @@ Full-Width Styles
 #header_wrap .inner > div{
   display: flex;
   position: absolute;
-  -webkit-animation-duration: 0.5s;
-  animation-duration: 0.5s;
 }
 
 #forkme_banner {
@@ -498,4 +496,9 @@ img.portrait{
 @font-face {
   font-family:"Josefin Sans";
   src: url("fonts/JosefinSans-Regular.ttf") /* TTF file for CSS3 browsers */
+}
+
+.cl-effect-5 a{
+  -webkit-animation-duration: 0.7s;
+  animation-duration: 0.7s;
 }
