@@ -43,10 +43,12 @@ $(document).ready(function($) {
 			$pages.eq( current ).addClass( 'pt-page-current' );
 
 			$ptButton.on( 'click', function() {
-				if( isAnimating ) {
+				if( isAnimating || $(this).hasClass('focused'))
 					return false;
-				}
-
+				// Focus/Unfocus header
+				$("#header_wrap a.focused").toggleClass("focused");
+				$(this).toggleClass('focused');
+				
 				nextPage({
 					animation: Math.floor(Math.random() * animations.max) + 1,
 					showPage: $(this).data("page") -1
