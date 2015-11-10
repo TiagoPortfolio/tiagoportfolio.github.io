@@ -215,130 +215,126 @@ $(document).ready(function($) {
 				inClass = 'pt-page-flipInTop pt-page-delay500';
 				break;
 				case 32:
-				outClass = 'pt-page-rotateFall pt-page-ontop';
-				inClass = 'pt-page-scaleUp';
-				break;
-				case 33:
 				outClass = 'pt-page-rotateOutNewspaper';
 				inClass = 'pt-page-rotateInNewspaper pt-page-delay500';
 				break;
-				case 34:
+				case 33:
 				outClass = 'pt-page-rotatePushLeft';
 				inClass = 'pt-page-moveFromRight';
 				break;
-				case 35:
+				case 34:
 				outClass = 'pt-page-rotatePushRight';
 				inClass = 'pt-page-moveFromLeft';
 				break;
-				case 36:
+				case 35:
 				outClass = 'pt-page-rotatePushTop';
 				inClass = 'pt-page-moveFromBottom';
 				break;
-				case 37:
+				case 36:
 				outClass = 'pt-page-rotatePushBottom';
 				inClass = 'pt-page-moveFromTop';
 				break;
-				case 38:
+				case 37:
 				outClass = 'pt-page-rotatePushLeft';
 				inClass = 'pt-page-rotatePullRight pt-page-delay180';
 				break;
-				case 39:
+				case 38:
 				outClass = 'pt-page-rotatePushRight';
 				inClass = 'pt-page-rotatePullLeft pt-page-delay180';
 				break;
-				case 40:
+				case 39:
 				outClass = 'pt-page-rotatePushTop';
 				inClass = 'pt-page-rotatePullBottom pt-page-delay180';
 				break;
-				case 41:
+				case 40:
 				outClass = 'pt-page-rotatePushBottom';
 				inClass = 'pt-page-rotatePullTop pt-page-delay180';
 				break;
-				case 42:
+				case 41:
 				outClass = 'pt-page-rotateFoldLeft';
 				inClass = 'pt-page-moveFromRightFade';
 				break;
-				case 43:
+				case 42:
 				outClass = 'pt-page-rotateFoldRight';
 				inClass = 'pt-page-moveFromLeftFade';
 				break;
-				case 44:
+				case 43:
 				outClass = 'pt-page-rotateFoldTop';
 				inClass = 'pt-page-moveFromBottomFade';
 				break;
-				case 45:
+				case 44:
 				outClass = 'pt-page-rotateFoldBottom';
 				inClass = 'pt-page-moveFromTopFade';
 				break;
-				case 46:
+				case 45:
 				outClass = 'pt-page-moveToRightFade';
 				inClass = 'pt-page-rotateUnfoldLeft';
 				break;
-				case 47:
+				case 46:
 				outClass = 'pt-page-moveToLeftFade';
 				inClass = 'pt-page-rotateUnfoldRight';
 				break;
-				case 48:
+				case 47:
 				outClass = 'pt-page-moveToBottomFade';
 				inClass = 'pt-page-rotateUnfoldTop';
 				break;
-				case 49:
+				case 48:
 				outClass = 'pt-page-moveToTopFade';
 				inClass = 'pt-page-rotateUnfoldBottom';
 				break;
-				case 50:
+				case 49:
 				outClass = 'pt-page-rotateRoomLeftOut pt-page-ontop';
 				inClass = 'pt-page-rotateRoomLeftIn';
 				break;
-				case 51:
+				case 50:
 				outClass = 'pt-page-rotateRoomRightOut pt-page-ontop';
 				inClass = 'pt-page-rotateRoomRightIn';
 				break;
-				case 52:
+				case 51:
 				outClass = 'pt-page-rotateRoomTopOut pt-page-ontop';
 				inClass = 'pt-page-rotateRoomTopIn';
 				break;
-				case 53:
+				case 52:
 				outClass = 'pt-page-rotateRoomBottomOut pt-page-ontop';
 				inClass = 'pt-page-rotateRoomBottomIn';
 				break;
-				case 54:
+				case 53:
 				outClass = 'pt-page-rotateCubeLeftOut pt-page-ontop';
 				inClass = 'pt-page-rotateCubeLeftIn';
 				break;
-				case 55:
+				case 54:
 				outClass = 'pt-page-rotateCubeRightOut pt-page-ontop';
 				inClass = 'pt-page-rotateCubeRightIn';
 				break;
-				case 56:
+				case 55:
 				outClass = 'pt-page-rotateCubeTopOut pt-page-ontop';
 				inClass = 'pt-page-rotateCubeTopIn';
 				break;
-				case 57:
+				case 56:
 				outClass = 'pt-page-rotateCubeBottomOut pt-page-ontop';
 				inClass = 'pt-page-rotateCubeBottomIn';
 				break;
-				case 58:
+				case 57:
 				outClass = 'pt-page-rotateCarouselLeftOut pt-page-ontop';
 				inClass = 'pt-page-rotateCarouselLeftIn';
 				break;
-				case 59:
+				case 58:
 				outClass = 'pt-page-rotateCarouselRightOut pt-page-ontop';
 				inClass = 'pt-page-rotateCarouselRightIn';
 				break;
-				case 60:
+				case 59:
 				outClass = 'pt-page-rotateCarouselTopOut pt-page-ontop';
 				inClass = 'pt-page-rotateCarouselTopIn';
 				break;
-				case 61:
+				case 60:
 				outClass = 'pt-page-rotateCarouselBottomOut pt-page-ontop';
 				inClass = 'pt-page-rotateCarouselBottomIn';
 				break;
-				case 62:
+				case 61:
 				outClass = 'pt-page-rotateSidesOut';
 				inClass = 'pt-page-rotateSidesIn pt-page-delay200';
 				break;
-				case 63:
+				case 62:
 				outClass = 'pt-page-rotateSlideOut';
 				inClass = 'pt-page-rotateSlideIn';
 				break;

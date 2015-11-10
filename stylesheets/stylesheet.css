@@ -488,6 +488,11 @@ img.portrait{
   overflow: hidden;
 }
 
+.pt-page{
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+}
+
 @font-face {
   font-family:"Open Sans";
   src: url("fonts/OpenSans-Light.ttf") /* TTF file for CSS3 browsers */
