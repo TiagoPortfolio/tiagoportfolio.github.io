@@ -45,9 +45,20 @@ $(document).ready(function($) {
 			$ptButton.on( 'click', function() {
 				if( isAnimating || $(this).hasClass('focused'))
 					return false;
+
 				// Focus/Unfocus header
 				$("#header_wrap a.focused").toggleClass("focused");
-				$(this).toggleClass('focused');
+				if($(this).hasClass('view_projects_bt')) //If view projects button
+					$("#projects_header").toggleClass('focused');
+				else
+					$(this).toggleClass('focused');
+				//Fade out other headers
+				if($(this).attr("id") != "home_header")
+			    $("#header_wrap div:nth-child(2) a:not(.focused)").each(function(){
+			      $(this).fadeOut("fast", function() {
+						  $(this).show().css({visibility: "hidden"});
+						});
+			    });
 				
 				nextPage({
 					animation: Math.floor(Math.random() * animations.max) + 1,
@@ -364,6 +375,11 @@ $(document).ready(function($) {
 		}
 
 		function onEndAnimation( $outpage, $inpage ) {
+			//Fade in other headers
+	    $("#header_wrap div:nth-child(2) a:not(.focused)").each(function(){
+	      $(this).hide().css({visibility: "visible"}).fadeIn("fast");
+	    });
+
 			endCurrPage = false;
 			endNextPage = false;
 			resetPage( $outpage, $inpage );
