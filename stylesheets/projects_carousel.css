@@ -1,0 +1,38 @@
+/*PROJECTS CAROUSEL*/
+
+.cell {
+  width: 60%; /* half-width */
+  height: 18em;
+  margin-right: 10px;
+	padding: 10px 10px;
+}
+
+@media screen and ( min-width: 768px ) {
+  /* half-width cells for larger devices */
+  .cell { width: 50%; }
+}
+
+.cell.is-selected {
+	border-radius: 10px;
+	background: rgba(192,192,192,0.1); 
+}
+
+.cell p {
+  font-weight: lighter;
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.cell img {
+  border-radius: 5px;
+  box-shadow: 0 0 5px black;
+}
+
+.cell a {
+	font-weight: bold;
+}
+
+/* hide disabled button */
+.flickity-prev-next-button:disabled {
+  display: none;
+}

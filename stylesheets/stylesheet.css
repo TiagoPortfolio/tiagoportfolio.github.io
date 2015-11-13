@@ -507,3 +507,8 @@ img.portrait{
   -webkit-animation-duration: 0.7s;
   animation-duration: 0.7s;
 }
+
+.projects_portrait {
+  background: white;
+  border-radius: 5px 5px 60px 62px;
+}

@@ -11,11 +11,14 @@
   <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/page_transitions/component.css">
   <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/animate.min.css">
   <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/header_animations.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/flickity.min.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/projects_carousel.css">
 
   <script type="text/javascript" src="javascripts/jquery-1.11.2.min.js"defer></script>
   <script type="text/javascript" src="javascripts/main.js" defer></script>
   <script type="text/javascript" src="javascripts/page_transitions/modernizr.custom.js" defer></script>
   <script type="text/javascript" src="javascripts/page_transitions/pagetransitions.js" defer></script>
+  <script type="text/javascript" src="javascripts/flickity.pkgd.min.js" defer></script>
 
   <title>Tiago Sousa - Portfolio</title>
 </head>
@@ -84,15 +87,38 @@
     <!-- PROJECTS PAGE-->
     <div class="pt-page pt-page-2 outer">
       <div class="inner">
-        <img class="portrait" src="images/tiagosousa.jpg"/>
-        <h1 id="project_title">Tiago Sousa</h1>
-        <h2 id="project_tagline">Projects </h2>
+        <img class="projects_portrait" src="images/html_css_js.png"/>
+        <h1 id="project_title">Projects</h1>
       </div>
-      <section class="inner">
-        <p>iRave Smartwatch Prototype - <a href="http://tiagoportfolio.github.io/smartwatch">iRave</a></p>
-      </section>
-      <section class="inner">
-        <p>Kitt Car Prototype - <a href="http://tiagoportfolio.github.io/carkitt">Kitt</a></p>
+      <section class="inner" style="margin-top: -1em;">
+        <div class="gallery">
+          <div class="cell">
+            <img src="images/tetris-lisp.jpg"/>
+            <p>This project implements in Common Lisp an artificial intelligence agent that solves a tetris puzzle.</p>
+            <p>
+              <a href="#" style="margin-right: 50px;">Demo soon...</a>
+              <a href="https://github.com/TiagoPortfolio/tetris-lisp">View Repo</a>
+            </p>
+          </div>
+          <div class="cell">
+            <img src="images/smartwatch.jpg"/>
+            <!-- <p>iRave Smartwatch Prototype - <a href="http://tiagoportfolio.github.io/smartwatch">iRave</a></p> -->
+            <p>This project simulates a Smartwatch in real scale with 1.5 inches where its purpose is to give maximum utility in the context of music festivals.</p>
+            <p>
+              <a href="http://tiagoportfolio.github.io/smartwatch" style="margin-right: 50px;">View Demo</a>
+              <a href="https://github.com/TiagoPortfolio/smartwatch">View Repo</a>
+            </p>
+          </div>
+          <div class="cell">
+            <!-- <p>Kitt Car Prototype - <a href="http://tiagoportfolio.github.io/carkitt">Kitt</a></p> -->
+            <img src="images/carkitt.jpg"/>
+            <p>Intelligent car system prototype that provides usefull features while driving. All system is displayed within the scale of a real car windshield.</p>
+            <p>
+              <a href="http://tiagoportfolio.github.io/carkitt" style="margin-right: 50px;">View Demo</a>
+              <a href="https://github.com/TiagoPortfolio/car-system">View Repo</a>
+            </p>
+          </div>
+        </div>
       </section>
     </div>
   </div>
