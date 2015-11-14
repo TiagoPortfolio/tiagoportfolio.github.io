@@ -3,7 +3,7 @@ $(document).ready(function($) {
 
 		var $main = $( '#pt-main' ),
 		$pages = $main.children( 'div.pt-page' ),
-		$ptButton = $( '.pt-button' ),
+		$ptButton = $('.pt-button'),
 		pagesCount = $pages.length,
 		current = 0,
 		isAnimating = false,
@@ -48,7 +48,7 @@ $(document).ready(function($) {
 
 				// Focus/Unfocus header
 				$("#header_wrap a.focused").toggleClass("focused");
-				if($(this).hasClass('view_projects_bt')) //If view projects button
+				if($(this).hasClass('button')) //If view projects button
 					$("#projects_header").toggleClass('focused');
 				else
 					$(this).toggleClass('focused');

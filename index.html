@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="csstransforms3d">
 
 <head>
   <meta charset='utf-8'>
@@ -16,7 +16,7 @@
 
   <script type="text/javascript" src="javascripts/jquery-1.11.2.min.js"defer></script>
   <script type="text/javascript" src="javascripts/main.js" defer></script>
-  <script type="text/javascript" src="javascripts/page_transitions/modernizr.custom.js" defer></script>
+  <script type="text/javascript" src="javascripts/page_transitions/modernizr.custom.js"></script>
   <script type="text/javascript" src="javascripts/page_transitions/pagetransitions.js" defer></script>
   <script type="text/javascript" src="javascripts/flickity.pkgd.min.js" defer></script>
 
@@ -78,8 +78,8 @@
         </section>
 
         <!-- VIEW PROJECTS BUTTON -->
-        <section data-page="2" class="inner pt-button view_projects_bt">
-          <div class="button">View Projects</div>
+        <section class="inner view_projects_bt">
+          <div data-page="2" class="button pt-button">View Projects</div>
         </section>
       </div>
     </div>
@@ -91,7 +91,31 @@
         <h1 id="project_title">Projects</h1>
       </div>
       <section class="inner" style="margin-top: -1em;">
-        <div class="gallery">
+        <div class="projects-left">
+          <nav class="cl-effect-2">
+            <a>
+              <span data-hover="Tetris AI">
+                Tetris AI
+              </span>
+            </a>
+            <a class="focused">
+              <span data-hover="iRave Smartwatch">
+                iRave Smartwatch
+              </span>
+            </a>
+            <a>
+              <span data-hover="Events">
+                Events
+              </span>
+            </a>
+            <a>
+              <span data-hover="Car System">
+                Car System
+              </span>
+            </a>
+          </nav>
+        </div>
+        <div class="gallery projects-right">
           <div class="cell">
             <img src="images/tetris-lisp.jpg"/>
             <p>This project implements in Common Lisp an artificial intelligence agent that solves a tetris puzzle.</p>
@@ -107,6 +131,16 @@
             <p>
               <a href="http://tiagoportfolio.github.io/smartwatch" style="margin-right: 50px;">View Demo</a>
               <a href="https://github.com/TiagoPortfolio/smartwatch">View Repo</a>
+            </p>
+          </div>
+          <div class="cell">
+            <!-- <p>Kitt Car Prototype - <a href="http://tiagoportfolio.github.io/carkitt">Kitt</a></p> -->
+            <img src="images/events.jpg"/>
+            <p style="margin:0px; font-size:13px;">This project lists events ordered chronologically automatically through AJAX requests to the database. Events are added through an admin backoffice where it is possible to edit every detail of the event including image upload.</p>
+            <p style="margin-top:5px; font-size:13px;">
+              <a href="http://www.aptoide.com/page/events">View Aptoide events page</a>
+              <br>
+              <a href="#">Demo and Repo in development...</a>
             </p>
           </div>
           <div class="cell">
@@ -127,7 +161,7 @@
   <div id="footer_wrap" class="outer">
     <footer class="inner">
       <a id="forkme_banner" href="https://github.com/TiagoPortfolio">View on GitHub</a>
-      <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      <p style="margin: 0px;">Published with <a href="https://pages.github.com">GitHub Pages</a></p>
     </footer>
   </div>
 
