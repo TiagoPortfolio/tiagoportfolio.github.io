@@ -534,7 +534,7 @@ img.portrait{
 }
 
 #skills-page {
-  font-family: 'Josefin Sans', sans-serif;  
+  font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
 }
 
 #skills-page img {
@@ -556,22 +556,27 @@ img.portrait{
 #skills-page .container {
   width:100%;
   display: inline-flex;
+  margin-top: -1.5em;
+  text-shadow: #4A4A4A 2px 2px 10px;
 }
 
 #skills-page .container > div {
   width:25%;
 }
 
-#skills-page .center {
-  margin:0 auto;
-}
-
 .pt-page-3 section {
   max-width: 100%;
+  padding: 0px 10px;
 }
 
 .skills-imgs {
   vertical-align: middle;
+}
+
+.skills-imgs a:focus,
+.skills-imgs a:hover {
+  vertical-align: middle;
+  text-decoration: none !important;
 }
 
 #skills-page section img {
@@ -584,4 +589,54 @@ img.portrait{
   background-color: white;
   border-radius: 5px;
   padding: 2px;
+}
+
+
+#skills-page .container > div > div:nth-child(1) {
+  height: 65px; 
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  width: inherit;
+}
+
+#skills-page .container > div:nth-child(1){
+  font-size: 40px;
+  font-weight: bold;
+  /*background: rgba(192, 192, 192, 0.23);*/
+  /*box-shadow: 0px 0px 60px rgba(192, 192, 192, 0.3);*/
+}
+
+#skills-page .container > div:nth-child(2){
+  font-size: 25px;
+  font-weight: bold;
+  /*background: rgba(192, 192, 192, 0.23);*/
+  /*box-shadow: 0px 0px 60px rgba(192, 192, 192, 0.3);*/
+}
+
+#skills-page .container > div:nth-child(3){
+  font-size: 20px;
+  /*background: rgba(192, 192, 192, 0.23);*/
+  /*box-shadow: 0px 0px 60px rgba(192, 192, 192, 0.3);*/
+}
+
+#linearBg1 {
+  /* fallback */
+  border-radius: 10px;
+  background-repeat: repeat-y;
+box-shadow: 0px 0px 60px rgba(192, 192, 192, 0.3);
+  /* Safari 4-5, Chrome 1-9 */
+  background: -webkit-gradient(linear, left top, right top, from(#1a82f7), to(#2F2727));
+
+  /* Safari 5.1, Chrome 10+ */
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(101,101,101,0.1), rgba(154,154,154,0.2), rgba(225, 225, 225, 0.3));
+
+  /* Firefox 3.6+ */
+  background: -moz-linear-gradient(left, #2F2727, #1a82f7);
+
+  /* IE 10 */
+  background: -ms-linear-gradient(left, #2F2727, #1a82f7);
+
+  /* Opera 11.10+ */
+  background: -o-linear-gradient(left, #2F2727, #1a82f7);
 }
