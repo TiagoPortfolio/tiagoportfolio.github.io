@@ -380,6 +380,33 @@ $(document).ready(function($) {
 	      $(this).hide().css({visibility: "visible"}).fadeIn("fast");
 	    });
 
+	    if(current == 2){
+	    	$("#skills-page .container > div:nth-child(1)").addClass('flash_div')
+					.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+						$(this).removeClass('flash_div');
+					});
+	    	$("#skills-page .container > div:nth-child(1)").fadeTo('fast', 1, function() {
+	    		$("#skills-page .container > div:nth-child(2)").addClass('flash_div')
+						.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+							$(this).removeClass('flash_div');
+						});
+	    		$("#skills-page .container > div:nth-child(2)").delay("150").fadeTo('fast', 1, function() {
+	    			$("#skills-page .container > div:nth-child(3)").addClass('flash_div')
+							.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+								$(this).removeClass('flash_div');
+							});
+	    			$("#skills-page .container > div:nth-child(3)").delay("150").fadeTo('fast', 1, function() {
+	    				$("#skills-page .container > div:nth-child(4)").addClass('flash_div')
+								.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+									$(this).removeClass('flash_div');
+								});
+	    				$("#skills-page .container > div:nth-child(4)").delay("150").fadeTo('fast', 1, function() {
+	    				});
+	    			});
+	    		});
+	    	});
+	    }
+
 			endCurrPage = false;
 			endNextPage = false;
 			resetPage( $outpage, $inpage );
