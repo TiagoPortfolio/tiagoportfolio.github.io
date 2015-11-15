@@ -234,19 +234,19 @@ table {
   border: 1px solid #373737;
   margin-bottom: 20px;
   text-align: left;
- }
+}
 
 th {
   font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   padding: 10px;
   background: #373737;
   color: #fff;
- }
+}
 
 td {
   padding: 10px;
   border: 1px solid #373737;
- }
+}
 
 form {
   background: #f2f2f2;
@@ -408,7 +408,7 @@ Small Device Styles
   }
 
   #project_title {
-  font-size: 32px;
+    font-size: 32px;
   }
 
   h1 {
@@ -531,4 +531,57 @@ img.portrait{
   width: 70%;
   position: absolute !important;
   right: 0;
+}
+
+#skills-page {
+  font-family: 'Josefin Sans', sans-serif;  
+}
+
+#skills-page img {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  -ms-box-shadow: none;
+}
+
+#skills_title {
+  margin-top: -0.3em;
+  color: #FFF;
+  font-size: 35px;
+  font-weight: 700;
+  text-shadow: #111 0px 5px 10px;
+}
+
+#skills-page .container {
+  width:100%;
+  display: inline-flex;
+}
+
+#skills-page .container > div {
+  width:25%;
+}
+
+#skills-page .center {
+  margin:0 auto;
+}
+
+.pt-page-3 section {
+  max-width: 100%;
+}
+
+.skills-imgs {
+  vertical-align: middle;
+}
+
+#skills-page section img {
+  height: 70px;
+  margin: 2px;
+  vertical-align: middle;
+}
+
+#skills-page .img-wrap {
+  background-color: white;
+  border-radius: 5px;
+  padding: 2px;
 }
