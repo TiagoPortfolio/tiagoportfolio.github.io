@@ -562,8 +562,14 @@ img.portrait{
 
 #skills-page .container > div {
   width:25%;
+  margin: 5px;
   border-radius: 10px;
   text-shadow: #111 0px 5px 10px;
+  background-color: rgba(192,192,192,0.1);
+}
+
+#skills-page .container > div:hover {
+  background-color: rgba(192,192,192,0.3);
 }
 
 .pt-page-3 section {
@@ -615,54 +621,50 @@ img.portrait{
 }
 
 #skills-page .container > div:nth-child(3){
-  font-size: 20px;
-}
+  font-size: 20px;5}
 
 @-webkit-keyframes flash_div {
   0% {
-      background-color: rgba(197, 197, 197, 0);
+      background-color: rgba(192,192,192,0.1);
   }
   50% {
-      background-color: rgba(192,192,192,0.2);
+      background-color: rgba(192,192,192,0.5);
   }
   100% {
-      background-color: rgba(197, 197, 197, 0);
-  }
-}
+      background-color: rgba(192,192,192,0.1);
+  }5}
 
 @-moz-keyframes flash_div {
   0% {
-      background-color: rgba(197, 197, 197, 0);
+      background-color: rgba(192,192,192,0.1);
   }
   50% {
-      background-color: rgba(192,192,192,0.2);
+      background-color: rgba(192,192,192,0.5);
   }
   100% {
-      background-color: rgba(197, 197, 197, 0);
-  }
-}
+      background-color: rgba(192,192,192,0.1);
+  }5}
 
 @-o-keyframes flash_div {
   0% {
-      background-color: rgba(197, 197, 197, 0);
+      background-color: rgba(192,192,192,0.1);
   }
   50% {
-      background-color: rgba(192,192,192,0.2);
+      background-color: rgba(192,192,192,0.5);
   }
   100% {
-      background-color: rgba(197, 197, 197, 0);
-  }
-}
+      background-color: rgba(192,192,192,0.1);
+  }5}
 
 @keyframes flash_div {
   0% {
-      background-color: rgba(197, 197, 197, 0);
+      background-color: rgba(192,192,192,0.1);
   }
   50% {
-      background-color: rgba(192,192,192,0.2);
+      background-color: rgba(192,192,192,0.5);
   }
   100% {
-      background-color: rgba(197, 197, 197, 0);
+      background-color: rgba(192,192,192,0.1);
   }
 }
 
