@@ -136,13 +136,13 @@ strong {
 
 img {
   position: relative;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   max-width: 739px;
-  box-shadow: 0 0 5px #ebebeb;
+  /*box-shadow: 0 0 5px #ebebeb;
   -webkit-box-shadow: 0 0 5px #ebebeb;
   -moz-box-shadow: 0 0 5px #ebebeb;
   -o-box-shadow: 0 0 5px #ebebeb;
-  -ms-box-shadow: 0 0 5px #ebebeb;
+  -ms-box-shadow: 0 0 5px #ebebeb;*/
 }
 
 p img {
@@ -484,8 +484,21 @@ img.portrait{
   user-select:none;
 }
 
+.view_projects_bt {
+  padding-top: 40px;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+
+.view_projects_bt img {
+  margin: 0px 5px;
+}
+
 #pt-main{
   overflow: hidden;
+  padding: 40px 0px;
 }
 
 .pt-page{
@@ -495,7 +508,7 @@ img.portrait{
 
 @font-face {
   font-family:"Open Sans";
-  src: url("fonts/OpenSans-Light.ttf") /* TTF file for CSS3 browsers */
+  src: url("fonts/OpenSans-Regular.ttf") /* TTF file for CSS3 browsers */
 }
 
 @font-face {
@@ -674,3 +687,7 @@ img.portrait{
   -o-animation: 650ms ease-in-out 0s 1  flash_div;
   animation: 650ms ease-in-out 0s 1  flash_div;
 }    
+
+.view_projects_bt img {
+    margin-top: 20px;
+}
