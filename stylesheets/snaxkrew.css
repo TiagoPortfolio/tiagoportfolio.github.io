@@ -48,6 +48,7 @@ html {
 }
 
 body {
+  padding: 40px 0px;
   box-sizing: border-box !important;
   color:#ffecec !important;
   font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif !important;
@@ -281,7 +282,6 @@ Small Device Styles
 
 #pt-main{
   overflow: hidden;
-  padding: 40px 0px;
 }
 
 @font-face {
