@@ -256,9 +256,13 @@ form {
   margin-top: 30px
 }
 
+.snax-pros span {
+  text-align: left;
+}
+
 .snax-pros p img {
   height: 40px;
-  margin-right: 5px;
+  margin-right: 15px;
 }
 
 .games, .footer {
