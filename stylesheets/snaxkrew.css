@@ -185,9 +185,15 @@ form {
   padding: 20px;
 }
 
-/*******************************************************************************
-Full-Width Styles
-*******************************************************************************/
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.center {
+  text-align: center;
+}
 
 .outer {
   width: 100%;
@@ -200,20 +206,95 @@ Full-Width Styles
   margin: 0 auto;
 }
 
-#project_title {
-  margin: 0;
+.content-box {
+  margin-top: 30px;
+}
+
+.section_title {
+  margin: 0px 0px 20px;
   color: #FFF;
   font-size: 35px;
   font-weight: 700;
   text-shadow: #111 0px 5px 10px;
 }
 
-#main_content_wrap {
-  text-align: center;
+.center .inner:first-child{
+  padding-top: 0px; 
 }
 
-#main_content_wrap .inner:first-child{
-  padding-top: 0px; 
+.logo {
+  box-shadow: 0 0 5px #ebebeb;
+  -webkit-box-shadow: 0 0 20px 2px #ebebeb;
+}
+
+.introduction {
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+  padding: 5px 15px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 60px rgba(192, 192, 192, 0.3);
+  background: rgba(37, 37, 37, 0.2);
+}
+
+.introduction .tagline {
+  font-size: 1.2em;
+}
+
+.flex-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.flex-wrapper .snax-pros {
+  font-size: 18px;
+}
+
+.snax-pros, .twitter-feed {
+  margin-top: 30px
+}
+
+.snax-pros p img {
+  height: 40px;
+  margin-right: 5px;
+}
+
+.games, .footer {
+  display:flex;
+  flex-wrap: wrap;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+
+.games {
+  justify-content: space-around;
+  align-items: center;
+  max-width: 80%;
+  padding: 0px;
+}
+
+.games img {
+  margin: 5px;
+}
+
+.footer {
+  max-width: 90%;
+  justify-content: center;
+  padding: 0px 10px;
+}
+
+@font-face {
+  font-family:"Open Sans";
+  src: url("fonts/OpenSans-Regular.ttf") /* TTF file for CSS3 browsers */
+}
+
+@font-face {
+  font-family:"Josefin Sans";
+  src: url("fonts/JosefinSans-Regular.ttf") /* TTF file for CSS3 browsers */
 }
 
 /*******************************************************************************
@@ -223,15 +304,6 @@ Small Device Styles
 @media screen and (max-width: 480px) {
   body {
     font-size:14px;
-  }
-
-  .inner {
-    min-width: 320px;
-    max-width: 480px;
-  }
-
-  #project_title {
-    font-size: 32px;
   }
 
   h1 {
@@ -257,43 +329,8 @@ Small Device Styles
   h6 {
     font-size: 12px;
   }
-}
 
-/*VIEW PROJECTS BUTTON*/
-.view_projects_bt {
-  padding-top: 40px;
-  -webkit-user-select:none;
-  -moz-user-select:none;
-  -ms-user-select:none;
-  user-select:none;
-}
-
-.view_projects_bt {
-  padding-top: 40px;
-  -webkit-user-select:none;
-  -moz-user-select:none;
-  -ms-user-select:none;
-  user-select:none;
-}
-
-.view_projects_bt img {
-  margin: 0px 5px;
-}
-
-#pt-main{
-  overflow: hidden;
-}
-
-@font-face {
-  font-family:"Open Sans";
-  src: url("fonts/OpenSans-Regular.ttf") /* TTF file for CSS3 browsers */
-}
-
-@font-face {
-  font-family:"Josefin Sans";
-  src: url("fonts/JosefinSans-Regular.ttf") /* TTF file for CSS3 browsers */
-}
-
-.view_projects_bt img {
-    margin-top: 20px;
+  .introduction {
+    font-size: 13px;
+  }
 }
