@@ -94,7 +94,7 @@ h6 {
 }
 
 p {
-  margin: 10px 0 15px 0;
+  margin: 0px 0 15px 0;
   text-shadow: 1px 2px 2px black;
 }
 
@@ -236,8 +236,41 @@ form {
   background: rgba(37, 37, 37, 0.2);
 }
 
+.introduction h1 {
+  font-family: 'Open Sans', sans-serif;
+  color: #ffecec;
+  font-size: 15px;
+  font-weight: normal;
+  letter-spacing: 0px;
+  margin: 10px 0 15px 0;
+  text-shadow: 1px 2px 2px black; 
+} 
+
 .introduction .tagline {
   font-size: 1.2em;
+}
+
+.content-box.discord .section_title {
+  font-size: 21px;
+  letter-spacing: 0px;
+}
+
+/* The animation code */
+@keyframes circle-around {
+  0%   {box-shadow: 2px 2px 1px 1px white;}
+  25%  {box-shadow: 2px -2px 1px 1px white;}
+  50%  {box-shadow: -2px -2px 1px 1px white;}
+  75%  {box-shadow: -2px 2px 1px 1px white;}
+  100%   {box-shadow: 2px 2px 1px 1px white;}
+}
+
+
+/* The element to apply the animation to */
+.content-box.discord img {
+  cursor: pointer;
+  border-radius: 20px;
+  -webkit-animation: circle-around 2s infinite linear;
+  animation: circle-around 2s infinite linear;
 }
 
 .flex-wrapper {
@@ -305,36 +338,40 @@ form {
 Small Device Styles
 *******************************************************************************/
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   body {
-    font-size:14px;
+    font-size:14px !important;
   }
 
   h1 {
-    font-size: 28px;
+    font-size: 28px !important;
   }
 
   h2 {
-    font-size: 24px;
+    font-size: 24px !important;
   }
 
   h3 {
-    font-size: 21px;
+    font-size: 21px !important;
   }
 
   h4 {
-    font-size: 18px;
+    font-size: 18px !important;
   }
 
   h5 {
-    font-size: 14px;
+    font-size: 14px !important;
   }
 
   h6 {
-    font-size: 12px;
+    font-size: 12px !important;
   }
 
-  .introduction {
-    font-size: 13px;
+  .introduction h1 {
+    font-size: 13px !important;
+  }
+
+  .introduction .tagline {
+    font-size: 1em !important;
   }
 }
