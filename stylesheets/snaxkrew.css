@@ -51,7 +51,7 @@ body {
   padding: 40px 0px;
   box-sizing: border-box !important;
   color:#ffecec !important;
-  font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif !important;
+  font-family: 'Open Sans', sans-serif;
   line-height: 1.5 !important;
   -webkit-font-smoothing: antialiased !important;
   background-image: url(../images/grey_background.jpg) !important;
@@ -62,7 +62,6 @@ h1, h2, h3, h4, h5, h6 {
   margin: 10px 0;
   font-weight: 700;
   color:#222222;
-  font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
   letter-spacing: -1px;
 }
 
@@ -229,7 +228,6 @@ form {
 
 .introduction {
   font-size: 15px;
-  font-family: 'Open Sans', sans-serif;
   padding: 5px 15px;
   border-radius: 10px;
   box-shadow: 0px 0px 60px rgba(192, 192, 192, 0.3);
@@ -237,7 +235,6 @@ form {
 }
 
 .introduction h1 {
-  font-family: 'Open Sans', sans-serif;
   color: #ffecec;
   font-size: 15px;
   font-weight: normal;
@@ -285,7 +282,7 @@ form {
 }
 
 .flex-wrapper .snax-pros {
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .snax-pros, .twitter-feed {
@@ -299,6 +296,21 @@ form {
 .snax-pros p img {
   height: 40px;
   margin-right: 15px;
+}
+
+.rank {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px
+}
+
+.rank .rank-title{
+  font-size: 20px;
+}
+
+.rank .rank-desc{
+  margin-top: 5px;
+  font-size: 15px;
 }
 
 .games, .footer {
