@@ -73,7 +73,6 @@ h1 {
 h2 {
   padding-bottom: 10px;
   font-size: 32px;
-  background: url('../images/bg_hr.png') repeat-x bottom;
 }
 
 h3 {
@@ -158,7 +157,6 @@ hr {
   height: 1px;
   margin-bottom: 5px;
   border: none;
-  background: url('../images/bg_hr.png') repeat-x center;
 }
 
 table {
@@ -255,14 +253,14 @@ form {
 /* The animation code */
 @keyframes circle-fade {
   0%   {box-shadow: 0px 0px 0px 0px white;}
-  37.5%  {box-shadow: 0px 0px 10px 2px white;}
-  75%   {box-shadow: 0px 0px 0px 0px white;}
-  80%   {box-shadow: 2px 2px 1px 1px white;}
+  37%  {box-shadow: 0px 0px 10px 2px white;}
+  75%  {box-shadow: 0px 0px 0px 0px white;}
+  80%  {box-shadow: 2px 2px 1px 1px white;}
   85%  {box-shadow: 2px -2px 1px 1px white;}
   90%  {box-shadow: -2px -2px 1px 1px white;}
   95%  {box-shadow: -2px 2px 1px 1px white;}
-  97%   {box-shadow: 2px 2px 1px 1px white;}
-  100%   {box-shadow: 0px 0px 0px 0px white;}
+  97%  {box-shadow: 2px 2px 1px 1px white;}
+  100% {box-shadow: 0px 0px 0px 0px white;}
 }
 
 /* The element to apply the animation to */
@@ -313,6 +311,17 @@ form {
   font-size: 15px;
 }
 
+@keyframes move-up {
+
+  0%   {transform: translateY(0px); opacity: 1;}
+  100%  {transform: translateY(-10px); opacity: 0;}
+}
+
+img.up-arrow {
+  -webkit-animation: move-up 1s infinite linear;
+  animation: move-up 1s infinite linear;
+}
+
 .games, .footer {
   display:flex;
   flex-wrap: wrap;
@@ -341,12 +350,12 @@ form {
 
 @font-face {
   font-family:"Open Sans";
-  src: url("fonts/OpenSans-Regular.ttf") /* TTF file for CSS3 browsers */
+  src: url("../fonts/OpenSans-Regular.ttf") /* TTF file for CSS3 browsers */
 }
 
 @font-face {
   font-family:"Josefin Sans";
-  src: url("fonts/JosefinSans-Regular.ttf") /* TTF file for CSS3 browsers */
+  src: url("../fonts/JosefinSans-Regular.ttf") /* TTF file for CSS3 browsers */
 }
 
 /*******************************************************************************
