@@ -263,11 +263,48 @@ form {
   100% {box-shadow: 0px 0px 0px 0px white;}
 }
 
-/* The element to apply the animation to */
+@-webkit-keyframes circle-fade {
+  0%   {box-shadow: 0px 0px 0px 0px white;}
+  37%  {box-shadow: 0px 0px 10px 2px white;}
+  75%  {box-shadow: 0px 0px 0px 0px white;}
+  80%  {box-shadow: 2px 2px 1px 1px white;}
+  85%  {box-shadow: 2px -2px 1px 1px white;}
+  90%  {box-shadow: -2px -2px 1px 1px white;}
+  95%  {box-shadow: -2px 2px 1px 1px white;}
+  97%  {box-shadow: 2px 2px 1px 1px white;}
+  100% {box-shadow: 0px 0px 0px 0px white;}
+}
+
+@-moz-keyframes circle-fade {
+  0%   {box-shadow: 0px 0px 0px 0px white;}
+  37%  {box-shadow: 0px 0px 10px 2px white;}
+  75%  {box-shadow: 0px 0px 0px 0px white;}
+  80%  {box-shadow: 2px 2px 1px 1px white;}
+  85%  {box-shadow: 2px -2px 1px 1px white;}
+  90%  {box-shadow: -2px -2px 1px 1px white;}
+  95%  {box-shadow: -2px 2px 1px 1px white;}
+  97%  {box-shadow: 2px 2px 1px 1px white;}
+  100% {box-shadow: 0px 0px 0px 0px white;}
+}
+
+@-o-keyframes circle-fade {
+  0%   {box-shadow: 0px 0px 0px 0px white;}
+  37%  {box-shadow: 0px 0px 10px 2px white;}
+  75%  {box-shadow: 0px 0px 0px 0px white;}
+  80%  {box-shadow: 2px 2px 1px 1px white;}
+  85%  {box-shadow: 2px -2px 1px 1px white;}
+  90%  {box-shadow: -2px -2px 1px 1px white;}
+  95%  {box-shadow: -2px 2px 1px 1px white;}
+  97%  {box-shadow: 2px 2px 1px 1px white;}
+  100% {box-shadow: 0px 0px 0px 0px white;}
+}
+
 .content-box.discord img {
   cursor: pointer;
   border-radius: 20px;
   -webkit-animation: circle-fade 2s infinite linear;
+  -moz-animation: circle-fade 2s infinite linear;
+  -o-animation: circle-fade 2s infinite linear;
   animation: circle-fade 2s infinite linear;
 }
 
@@ -312,14 +349,55 @@ form {
 }
 
 @keyframes move-up {
+  0%   {transform: translateY(0px); opacity: 0;}
+  12.5% {transform: translateY(-5px); opacity: 1;}
+  40%   {transform: translateY(-10px); opacity: 0;}
+  100%  {transform: translateY(-10px); opacity: 0;}
+}
 
-  0%   {transform: translateY(0px); opacity: 1;}
+@-webkit-keyframes move-up {
+  0%   {transform: translateY(0px); opacity: 0;}
+  12.5% {transform: translateY(-5px); opacity: 1;}
+  40%   {transform: translateY(-10px); opacity: 0;}
+  100%  {transform: translateY(-10px); opacity: 0;}
+}
+
+@-moz-keyframes move-up {
+  0%   {transform: translateY(0px); opacity: 0;}
+  12.5% {transform: translateY(-5px); opacity: 1;}
+  40%   {transform: translateY(-10px); opacity: 0;}
+  100%  {transform: translateY(-10px); opacity: 0;}
+}
+
+@-o-keyframes move-up {
+  0%   {transform: translateY(0px); opacity: 0;}
+  12.5% {transform: translateY(-5px); opacity: 1;}
+  40%   {transform: translateY(-10px); opacity: 0;}
   100%  {transform: translateY(-10px); opacity: 0;}
 }
 
 img.up-arrow {
-  -webkit-animation: move-up 1s infinite linear;
-  animation: move-up 1s infinite linear;
+  opacity: 0;
+  -webkit-animation: move-up 2s infinite linear;
+  -moz-animation: move-up 2s infinite linear;
+  -o-animation: move-up 2s infinite linear;
+  animation: move-up 2s infinite linear;
+}
+
+.prog-system img.up-arrow:nth-of-type(1) {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.prog-system img.up-arrow:nth-of-type(2) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+
+.prog-system img.up-arrow:nth-of-type(3) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
 }
 
 .games, .footer {
