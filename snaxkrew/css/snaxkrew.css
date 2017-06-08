@@ -330,10 +330,19 @@ div.content-box.discord img:hover {
   margin-top: 30px
 }
 
+.flex-wrapper.prog-games {
+  max-width: 1200px;
+  margin-top: 30px;
+}
+
 .snax-pros .pro {
   display: flex;
   align-items: center;
   margin-bottom: 15px;
+}
+
+.snax-pros .pro:last-child {
+  margin-bottom: 0px;
 }
 
 .snax-pros span {
@@ -345,16 +354,41 @@ div.content-box.discord img:hover {
   margin-right: 15px;
 }
 
-.prog-system.content-box {
-  max-width: 1000px;
+.prog-system {
+  display: flex;
+  flex-direction: column;
+}
+
+.games {
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+}
+
+.games img {
+  margin: 0px 10px 20px;
+}
+
+.games .inner {
+  padding: 0px 10px;
 }
 
 .prog-system section {
   margin-top: 20px;
+  margin-bottom: 40px;
 }
 
-.prog-system.content-box .rank:last-child {
-  margin-bottom: 34px;
+.prog-system label {
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+label:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 input.toggle {
@@ -370,7 +404,7 @@ input.toggle ~ section .rank-desc {
 
 input.toggle:checked ~ section .rank-desc {
   max-height: 9000px;
-  padding: 20px;
+  padding: 10px 15px;
   margin-top: 15px;
   transition: 1s ease;
 }
@@ -384,7 +418,8 @@ input.toggle:checked ~ section .rank-desc {
 .rank .rank-title {
   display: flex;
   justify-content: center;
-  font-size: 25px;
+  font-size: 20px;
+  align-items: center;
 }
 
 .rank .rank-title span {
@@ -420,12 +455,12 @@ input.toggle:checked ~ section .rank-desc {
 
 .rank .rank-desc {
   margin: 15px auto 0 auto;
-  font-size: 15px;
-  max-width: 80%;
+  font-size: 14px;
+  max-width: 90%;
   border-radius: 10px;
   text-align: left;
-  padding: 20px;
-  box-shadow: 0px 0px 60px rgba(192, 192, 192, 0.3);
+  padding: 10px 15px;
+  box-shadow: 0px 0px 60px rgba(110, 110, 110, 0.3);
   background: rgba(37, 37, 37, 0.2);
 }
 
@@ -503,17 +538,6 @@ img.up-arrow {
   user-select:none;
 }
 
-.games {
-  justify-content: space-around;
-  align-items: center;
-  max-width: 80%;
-  padding: 0px;
-}
-
-.games img {
-  margin: 5px;
-}
-
 .footer {
   max-width: 90%;
   justify-content: center;
@@ -571,8 +595,24 @@ Small Device Styles
     font-size: 1em !important;
   }
 
+  .rank .rank-title {
+    font-size: 18px;
+  }
+
   .rank .rank-desc {
     max-width: 640px;
     font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 463px) {
+  .games {
+    max-width: 50%;
+    min-width: 463.1px;
+  }
+
+  .prog-system {
+     min-width: 320px;
+     width: 50%;
   }
 }
