@@ -143,10 +143,6 @@ p img {
   border: none;
 }
 
-ul, ol, dl {
-  margin-bottom: 15px
-}
-
 ul {
   list-style-position: inside;
   list-style: disc;
@@ -204,7 +200,9 @@ form {
 }
 
 .content-box {
-  margin-top: 30px;
+  margin: 30px auto 0px auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .section_title {
@@ -215,7 +213,7 @@ form {
   text-shadow: #111 0px 5px 10px;
 }
 
-.center .inner:first-child{
+.center .inner:first-child {
   padding-top: 0px; 
 }
 
@@ -250,7 +248,6 @@ form {
   letter-spacing: 0px;
 }
 
-/* The animation code */
 @keyframes circle-fade {
   0%   {box-shadow: 0px 0px 0px 0px white;}
   37%  {box-shadow: 0px 0px 10px 2px white;}
@@ -299,13 +296,22 @@ form {
   100% {box-shadow: 0px 0px 0px 0px white;}
 }
 
-.content-box.discord img {
+div.content-box.discord a {
+  width: 270px;
+  margin: 0 auto;
+}
+
+div.content-box.discord img {
   cursor: pointer;
   border-radius: 20px;
   -webkit-animation: circle-fade 2s infinite linear;
   -moz-animation: circle-fade 2s infinite linear;
   -o-animation: circle-fade 2s infinite linear;
   animation: circle-fade 2s infinite linear;
+}
+
+div.content-box.discord img:hover {
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .flex-wrapper {
@@ -333,19 +339,89 @@ form {
   margin-right: 15px;
 }
 
+.prog-system.content-box {
+  max-width: 1000px;
+}
+
+.prog-system.content-box .rank:last-child {
+  margin-bottom: 34px;
+}
+
 .rank {
   display: flex;
   flex-direction: column;
   margin-bottom: 15px
 }
 
-.rank .rank-title{
-  font-size: 20px;
+.rank .rank-title {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
 }
 
-.rank .rank-desc{
-  margin-top: 5px;
+.rank .rank-title span {
+  margin: 0 10px;
+}
+
+.rank .rank-title img:nth-of-type(2) {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+/*input.toggle {
+  display: none;
+}
+
+input.toggle ~ section {
+  max-height: 0px;
+  overflow: hidden;
+  transition: 1s ease;
+}
+
+input.toggle:checked ~ section {
+  max-height: 9000px;
+}*/
+
+.rank .rank-title.unnamed img:nth-of-type(1) {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+.rank .rank-title.unnamed img:nth-of-type(2) {
+  -moz-transform: scaleX(1);
+  -o-transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+.rank .rank-desc {
+  margin: 15px auto 0 auto;
   font-size: 15px;
+  max-width: 80%;
+  border-radius: 10px;
+  text-align: left;
+  padding: 20px;
+  box-shadow: 0px 0px 60px rgba(192, 192, 192, 0.3);
+  background: rgba(37, 37, 37, 0.2);
+}
+
+.rank .rank-desc ul {
+  margin-left: 20px;
+}
+
+.rank .rank-desc span {
+  margin-bottom: 5px;
+  display: block;
 }
 
 @keyframes move-up {
@@ -385,19 +461,23 @@ img.up-arrow {
 }
 
 .prog-system img.up-arrow:nth-of-type(1) {
-  -webkit-animation-delay: 0.6s;
-  animation-delay: 0.6s;
-}
-
-.prog-system img.up-arrow:nth-of-type(2) {
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
 }
 
+.prog-system img.up-arrow:nth-of-type(2) {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
 
 .prog-system img.up-arrow:nth-of-type(3) {
   -webkit-animation-delay: 0.2s;
   animation-delay: 0.2s;
+}
+
+.prog-system img.up-arrow:nth-of-type(4) {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
 }
 
 .games, .footer {
@@ -475,5 +555,10 @@ Small Device Styles
 
   .introduction .tagline {
     font-size: 1em !important;
+  }
+
+  .rank .rank-desc {
+    max-width: 640px;
+    font-size: 13px;
   }
 }
