@@ -366,7 +366,6 @@ input.toggle ~ section .rank-desc {
   padding: 0px;
   margin-top: 0px;
   overflow: hidden;
-  transition: 0.2s ease;
 }
 
 input.toggle:checked ~ section .rank-desc {
