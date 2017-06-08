@@ -343,6 +343,10 @@ div.content-box.discord img:hover {
   max-width: 1000px;
 }
 
+.prog-system section {
+  margin-top: 20px;
+}
+
 .prog-system.content-box .rank:last-child {
   margin-bottom: 34px;
 }
@@ -372,19 +376,24 @@ div.content-box.discord img:hover {
   -ms-filter: "FlipH";
 }
 
-/*input.toggle {
+input.toggle {
   display: none;
 }
 
-input.toggle ~ section {
+input.toggle ~ section .rank-desc {
   max-height: 0px;
+  padding: 0px;
+  margin-top: 0px;
   overflow: hidden;
-  transition: 1s ease;
+  transition: 0.2s ease;
 }
 
-input.toggle:checked ~ section {
+input.toggle:checked ~ section .rank-desc {
   max-height: 9000px;
-}*/
+  padding: 20px;
+  margin-top: 15px;
+  transition: 1s ease;
+}
 
 .rank .rank-title.unnamed img:nth-of-type(1) {
   -moz-transform: scaleX(-1);
