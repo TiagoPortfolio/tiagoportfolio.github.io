@@ -330,11 +330,13 @@ div.content-box.discord img:hover {
   margin-top: 30px
 }
 
-.snax-pros span {
-  text-align: left;
+.snax-pros .pro {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
 }
 
-.snax-pros p img {
+.snax-pros img {
   height: 40px;
   margin-right: 15px;
 }
@@ -349,6 +351,25 @@ div.content-box.discord img:hover {
 
 .prog-system.content-box .rank:last-child {
   margin-bottom: 34px;
+}
+
+input.toggle {
+  display: none;
+}
+
+input.toggle ~ section .rank-desc {
+  max-height: 0px;
+  padding: 0px;
+  margin-top: 0px;
+  overflow: hidden;
+  transition: 0.2s ease;
+}
+
+input.toggle:checked ~ section .rank-desc {
+  max-height: 9000px;
+  padding: 20px;
+  margin-top: 15px;
+  transition: 1s ease;
 }
 
 .rank {
@@ -374,25 +395,6 @@ div.content-box.discord img:hover {
   transform: scaleX(-1);
   filter: FlipH;
   -ms-filter: "FlipH";
-}
-
-input.toggle {
-  display: none;
-}
-
-input.toggle ~ section .rank-desc {
-  max-height: 0px;
-  padding: 0px;
-  margin-top: 0px;
-  overflow: hidden;
-  transition: 0.2s ease;
-}
-
-input.toggle:checked ~ section .rank-desc {
-  max-height: 9000px;
-  padding: 20px;
-  margin-top: 15px;
-  transition: 1s ease;
 }
 
 .rank .rank-title.unnamed img:nth-of-type(1) {
@@ -558,7 +560,7 @@ Small Device Styles
     font-size: 12px !important;
   }
 
-  .introduction h1 {
+  .introduction h1, .flex-wrapper .snax-pros {
     font-size: 13px !important;
   }
 
