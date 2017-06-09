@@ -372,6 +372,10 @@ div.content-box.discord img:hover {
 }
 
 .games .inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   padding: 0px 10px;
 }
 
@@ -418,7 +422,7 @@ input.toggle:checked ~ section .rank-desc {
 .rank .rank-title {
   display: flex;
   justify-content: center;
-  font-size: 20px;
+  font-size: 18px;
   align-items: center;
 }
 
@@ -598,7 +602,7 @@ Small Device Styles
   }
 
   .rank .rank-title {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .rank .rank-desc {
