@@ -124,6 +124,10 @@ strong {
 }
 
 img {
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
   position: relative;
   /*margin: 0 auto;*/
   max-width: 739px;
@@ -609,16 +613,24 @@ Small Device Styles
     max-width: 640px;
     font-size: 13px;
   }
+
+  .games img {
+    height: 70px;
+  }
+
+  .games img.mxm {
+    height: 60px;
+  }
 }
 
-@media screen and (min-width: 463px) {
+@media screen and (min-width: 964px) {
   .games {
     max-width: 50%;
     min-width: 463.1px;
   }
 
   .prog-system {
-     min-width: 320px;
+     min-width: 463px;
      width: 50%;
   }
 }
