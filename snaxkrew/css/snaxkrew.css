@@ -381,8 +381,9 @@ div.content-box.discord img:hover {
 }
 
 .prog-system label {
+  font-size: 13px;
   border: 1px solid white;
-  padding: 10px;
+  padding: 5px 10px;
   border-radius: 15px;
   cursor: pointer;
 }
@@ -412,7 +413,6 @@ input.toggle:checked ~ section .rank-desc {
 .rank {
   display: flex;
   flex-direction: column;
-  margin-bottom: 15px;
 }
 
 .rank .rank-title {
@@ -502,6 +502,8 @@ input.toggle:checked ~ section .rank-desc {
 }
 
 img.up-arrow {
+  top: 13px;
+  margin-top: -5px;
   opacity: 0;
   -webkit-animation: move-up 2s infinite linear;
   -moz-animation: move-up 2s infinite linear;
