@@ -90,6 +90,7 @@ nav a:focus {
 .cl-effect-5 a {
 	overflow: hidden;
 	padding: 0 5px;
+	vertical-align: middle;
 }
 
 .cl-effect-5 a span {
@@ -102,10 +103,10 @@ nav a:focus {
 
 .cl-effect-5 a span::before {
 	position: absolute;
-  color: black;
-  background: white;
-  border-radius: 5px;
-  padding: 5px;
+	color: black;
+	background: white;
+	border-radius: 5px;
+	padding: 5px 5px 0px 5px;
 	top: 100%;
 	content: attr(data-hover);
 	font-weight: 700;
