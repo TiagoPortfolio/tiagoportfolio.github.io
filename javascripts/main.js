@@ -74,25 +74,11 @@ $(document).ready(function(){
 	  // at end of cells, wraps-around to first for infinite scrolling
 	});
 
-	var flkty = $projectsCarousel.data('flickity');
-
-	//PROJECT BUTTONS
-	$('.projects-left').on('click', 'a', function() {
-	  $projectsCarousel.flickity('select', $(this).index());
-		$(".projects-left a.focused").toggleClass("focused");
-		$(this).toggleClass("focused");
-	});
-
 	//PROJECT SLIDER
 	$projectsCarousel.on('cellSelect staticClick', function(event, pointer, cellElement, cellIndex) {
-		if(event.type == "staticClick")
+		if(event.type == "staticClick") {
 			$projectsCarousel.flickity('select', cellIndex);
-		// Focus/Unfocus project
-		$(".projects-left a.focused").toggleClass("focused");
-		if(typeof cellIndex != "undefined")
-			$($(".projects-left a")[cellIndex]).toggleClass("focused");
-		else
-			$($(".projects-left a")[flkty.selectedIndex]).toggleClass("focused");
+		}
 	});
 });
 
