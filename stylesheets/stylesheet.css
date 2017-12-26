@@ -56,6 +56,7 @@ body {
   -webkit-font-smoothing: antialiased !important;
   background-image: url(../images/grey_background.jpg) !important;
   background-size: cover !important;
+  padding: 10px 20px 0px 20px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -280,7 +281,6 @@ Full-Width Styles
 
 #forkme_banner {
   display: block;
-  position: absolute;
   top:-15px;
   right: 10px;
   z-index: 10;
@@ -294,11 +294,24 @@ Full-Width Styles
 }
 
 #header_wrap {
+  display: flex;
+  justify-content: space-between;
   font-family: 'Josefin Sans', sans-serif;
   -webkit-user-select:none;
   -moz-user-select:none;
   -ms-user-select:none;
   user-select:none;
+}
+
+#header_wrap header{
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+}
+
+#header_wrap header > div{
+  display: inline-flex;
+  align-items: center;
 }
 
 #header_wrap .inner {
@@ -370,22 +383,38 @@ Full-Width Styles
   padding-top: 0px; 
 }
 
+.intro {
+  justify-content: center;
+  display: flex;
+}
+
 #introduction {
-  font-weight: lighter;
-  font-size: 15px;
+  font-weight: 700;
+  color: #e5e5e5;
+  text-align: justify;
+  font-size: 14px;
   font-family: 'Open Sans', sans-serif;
   padding: 5px 10px;
+  margin: 0px 30px;
   border-radius: 10px;
   box-shadow: 0px 0px 60px rgba(192, 192, 192, 0.3);
-  background: rgba(192,192,192,0.1);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 #footer_wrap {
-  margin-top: -1%;
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
 }
 
 #footer_wrap footer:first-child {
   padding: 0 10px;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
 }
 
 
@@ -448,7 +477,10 @@ img.portrait{
 }
 
 .highlight{
-  font-size: 19px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: lighter;
   text-shadow: #111 2px 2px 1px;
@@ -679,4 +711,21 @@ img.portrait{
 
 a#home_header {
   padding-top: 5px;
+}
+
+@media screen and (max-width: 550px) {
+  #header_wrap header div:first-child img, 
+  #header_wrap header div:first-child nav {
+    display: none;
+  }
+
+  #header_wrap header div:first-child {
+    flex: 0;
+  }
+
+  #header_wrap header {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+  }
 }
