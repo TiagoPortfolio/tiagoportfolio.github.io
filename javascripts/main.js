@@ -80,5 +80,46 @@ $(document).ready(function(){
 			$projectsCarousel.flickity('select', cellIndex);
 		}
 	});
+	$ptButton = $('.pt-button');
+
+	$ptButton.on('click', function() {
+		// Focus/Unfocus header
+		$("#header_wrap a.focused").toggleClass("focused");
+		if ($(this).hasClass('button')) { //If view projects button
+			$("#projects_header").toggleClass('focused');
+		} else {
+			$(this).toggleClass('focused');
+		}
+
+
+
+	    //page = 2
+	    if(2){
+	    	$("#skills-page .container > div:nth-child(1)").addClass('flash_div')
+					.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+						$(this).removeClass('flash_div');
+					});
+	    	$("#skills-page .container > div:nth-child(1)").fadeTo('fast', 1, function() {
+	    		$("#skills-page .container > div:nth-child(2)").addClass('flash_div')
+						.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+							$(this).removeClass('flash_div');
+						});
+	    		$("#skills-page .container > div:nth-child(2)").delay("150").fadeTo('fast', 1, function() {
+	    			$("#skills-page .container > div:nth-child(3)").addClass('flash_div')
+							.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+								$(this).removeClass('flash_div');
+							});
+	    			$("#skills-page .container > div:nth-child(3)").delay("150").fadeTo('fast', 1, function() {
+	    				$("#skills-page .container > div:nth-child(4)").addClass('flash_div')
+								.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+									$(this).removeClass('flash_div');
+								});
+	    				$("#skills-page .container > div:nth-child(4)").delay("150").fadeTo('fast', 1, function() {
+	    				});
+	    			});
+	    		});
+	    	});
+	    }
+	});
 });
 

@@ -56,7 +56,7 @@ body {
   -webkit-font-smoothing: antialiased !important;
   background-image: url(../images/grey_background.jpg) !important;
   background-size: cover !important;
-  padding: 10px 20px 0px 20px;
+  padding: 10px 15px 0px 15px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -294,6 +294,7 @@ Full-Width Styles
 }
 
 #header_wrap {
+  margin-bottom: 5px;
   display: flex;
   justify-content: space-between;
   font-family: 'Josefin Sans', sans-serif;
@@ -402,6 +403,10 @@ Full-Width Styles
 }
 
 #footer_wrap {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
   display: flex;
   flex: 1;
   flex-wrap: wrap;
@@ -415,61 +420,6 @@ Full-Width Styles
   display: flex;
   flex: 1;
   justify-content: space-between;
-}
-
-
-
-/*******************************************************************************
-Small Device Styles
-*******************************************************************************/
-
-@media screen and (max-width: 480px) {
-  body {
-    font-size:14px;
-  }
-
-  #downloads {
-    display: none;
-  }
-
-  .inner {
-    min-width: 320px;
-    max-width: 480px;
-  }
-
-  #project_title {
-    font-size: 32px;
-  }
-
-  h1 {
-    font-size: 28px;
-  }
-
-  h2 {
-    font-size: 24px;
-  }
-
-  h3 {
-    font-size: 21px;
-  }
-
-  h4 {
-    font-size: 18px;
-  }
-
-  h5 {
-    font-size: 14px;
-  }
-
-  h6 {
-    font-size: 12px;
-  }
-
-  code, pre {
-    min-width: 320px;
-    max-width: 480px;
-    font-size: 11px;
-  }
 }
 
 img.portrait{
@@ -510,15 +460,12 @@ img.portrait{
 
 /*VIEW PROJECTS BUTTON*/
 .view_projects_bt {
-  padding-top: 40px;
+  margin-top: 30px;
+  padding: 0px;
   -webkit-user-select:none;
   -moz-user-select:none;
   -ms-user-select:none;
   user-select:none;
-}
-
-#pt-main{
-  overflow: hidden;
 }
 
 .pt-page{
@@ -544,6 +491,11 @@ img.portrait{
 .projects_portrait {
   background: white;
   border-radius: 5px 5px 60px 62px;
+}
+
+.pt-page-2, .pt-page-3 {
+  display: none;
+  transition: opacity 1s;
 }
 
 .pt-page-2 section{
@@ -713,6 +665,69 @@ a#home_header {
   padding-top: 5px;
 }
 
+@media screen and (max-width: 480px) {
+  body {
+    font-size:14px;
+  }
+
+  img.portrait {
+    width: 90px;
+  }
+
+  #introduction {
+    font-size: 11px;
+    padding: 5px 10px;
+    margin: 0px 10px;
+    box-shadow: 0px 0px 30px rgba(192, 192, 192, 0.3);
+  }
+
+  #downloads {
+    display: none;
+  }
+
+  .inner {
+    max-width: 480px;
+  }
+
+  #project_title {
+    font-size: 27px;
+  }
+
+  #project_tagline {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 21px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  h5 {
+    font-size: 14px;
+  }
+
+  h6 {
+    font-size: 12px;
+  }
+
+  code, pre {
+    min-width: 320px;
+    max-width: 480px;
+    font-size: 11px;
+  }
+}
+
 @media screen and (max-width: 550px) {
   #header_wrap header div:first-child img, 
   #header_wrap header div:first-child nav {
@@ -729,3 +744,4 @@ a#home_header {
     flex: 1;
   }
 }
+
