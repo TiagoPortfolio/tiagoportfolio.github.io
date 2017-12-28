@@ -59,7 +59,7 @@ body {
   -webkit-font-smoothing: antialiased !important;
   background-image: url(../images/grey_background.jpg) !important;
   background-size: cover !important;
-  padding: 10px 15px 0px 15px;
+  padding: 15px;
 }
 
 *, *:before, *:after {
@@ -103,7 +103,7 @@ h6 {
 }
 
 p {
-  margin: 10px 0 15px 0;
+  margin: 10px 0;
   text-shadow: 1px 2px 2px black;
 }
 
@@ -404,7 +404,7 @@ Full-Width Styles
   font-size: 14px;
   font-family: 'Open Sans', sans-serif;
   padding: 5px 10px;
-  margin: 0px 30px;
+  margin: 0px 25px;
   border-radius: 10px;
   box-shadow: 0px 0px 60px rgba(192, 192, 192, 0.3);
   background: rgba(255, 255, 255, 0.1);
@@ -656,10 +656,6 @@ img.portrait{
   -moz-animation: 650ms ease-in-out 0s 1  flash_div;
   -o-animation: 650ms ease-in-out 0s 1  flash_div;
   animation: 650ms ease-in-out 0s 1  flash_div;
-}    
-
-a#home_header {
-  padding-top: 5px;
 }
 
 @media screen and (max-width: 480px) {
@@ -726,13 +722,13 @@ a#home_header {
 }
 
 @media screen and (max-width: 550px) {
-  #header_wrap header div:first-child img, 
   #header_wrap header div:first-child nav {
     display: none;
   }
 
-  #header_wrap header div:first-child {
-    flex: 0;
+  #header_wrap header div:first-child img {
+    position: absolute;
+    left: 15px;
   }
 
   #header_wrap header {
