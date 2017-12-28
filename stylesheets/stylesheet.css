@@ -47,9 +47,12 @@ table {
 /*******************************************************************************
 Theme Styles
 *******************************************************************************/
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
 
 body {
-  box-sizing: border-box !important;
   color:#ffecec !important;
   font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif !important;
   line-height: 1.5 !important;
@@ -57,6 +60,11 @@ body {
   background-image: url(../images/grey_background.jpg) !important;
   background-size: cover !important;
   padding: 10px 15px 0px 15px;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -469,8 +477,8 @@ img.portrait{
 }
 
 .pt-page{
-  -webkit-animation-duration: 0.5s;
-  animation-duration: 0.5s;
+  -webkit-animation-duration: 0.2s;
+  animation-duration: 0.2s;
 }
 
 @font-face {
@@ -495,21 +503,10 @@ img.portrait{
 
 .pt-page-2, .pt-page-3 {
   display: none;
-  transition: opacity 1s;
 }
 
 .pt-page-2 section{
   max-width: 95%
-}
-
-.projects-left {
-  -webkit-user-select:none;
-  -moz-user-select:none;
-  -ms-user-select:none;
-  user-select:none;
-  width: 25%;
-  position: absolute;
-  left: 0;
 }
 
 .projects-right {

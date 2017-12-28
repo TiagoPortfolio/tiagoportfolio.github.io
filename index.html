@@ -12,215 +12,191 @@
   <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/projects_carousel.css">
   <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-  <script type="text/javascript" src="javascripts/jquery-1.11.2.min.js" defer></script>
-  <script type="text/javascript" src="javascripts/main.js" defer></script>
+  <script type="text/javascript" src="javascripts/jquery-1.11.2.min.js"></script>
+  <script type="text/javascript" src="javascripts/main.js"></script>
   <script type="text/javascript" src="javascripts/page_transitions/modernizr.custom.js"></script>
-  <script type="text/javascript" src="javascripts/flickity.pkgd.min.js" defer></script>
+  <script type="text/javascript" src="javascripts/flickity.pkgd.min.js"></script>
 
   <title>Tiago Sousa - Portfolio</title>
 </head>
-
 <body>
-
-  <!-- HEADER -->
-  <div id="header_wrap" class="outer">
-    <header>
-      <div>
-        <img class="portrait" src="images/tiagosousa_mini.jpg" style="height:31px"/>
-        <nav class="cl-effect-5">
-          <a id="home_header" data-page="1" class="pt-button anim focused">
-            <span data-hover="Tiago Sousa - Portfolio">
-              <div>Tiago Sousa - Portfolio</div>
-            </span>
-          </a>
-        </nav>
-      </div>
-
-      <div>
-        <nav class="cl-effect-5">
-          <a id="projects_header" class="pt-button anim" data-page="2">
-            <span data-hover="Projects">
-              <div>Projects</div>
-            </span>
-          </a>
-          <a id="skills_header" class="pt-button anim" data-page="3">
-            <span data-hover="Skills">
-              <div>Skills</div>
-            </span>
-          </a>
-          <a class="pt-button anim">
-            <span data-hover="About">
-              <div>About</div>
-            </span>
-          </a>
-        </nav>
-      </div>
-      
-    </header>
-  </div>
-
-  <!-- PAGE TRANSITION -->
-  <div id="pt-main" class="pt-perspective">
-    <!-- HOME PAGE -->
-    <div class="pt-page pt-page-1">
-      <!-- MAIN CONTENT -->
-      <div id="main_content_wrap" class="outer">
-        <div class="inner">
-          <img class="portrait" src="images/tiagosousa.jpg"/>
-          <h1 id="project_title">Tiago Sousa</h1>
-          <h2 id="project_tagline">Web Developer </h2>
+  <div class="content-wrapper">
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+      <header>
+        <div>
+          <!-- <img class="portrait" src="images/tiagosousa_mini.jpg" style="height:31px"/> -->
+          <nav class="cl-effect-5">
+            <a id="home_header" data-page="1" class="pt-button anim focused">
+              <span data-hover="Tiago Sousa - Portfolio">
+                <div>Tiago Sousa - Portfolio</div>
+              </span>
+            </a>
+          </nav>
         </div>
 
-        <!-- INTRODUCTION -->
-        <div class="intro">
-          <section id="introduction" class="inner">
-            <p>I always wondered how to create a website and while taking my B.Sc. in Computer Science and Engineering, I decided to deep dive and learn more about it. I was glad that I found really soon my true area of interest:
-            <span class="highlight">Web Development</span>
-            I liked the web world so much that I decided to look for a job and suddenly I was working for a company. I am not going to lie, studies turned out to be boring because I was learning so much more working in web and learning is my drive and motivation.
-            I specially like frontend technologies and developing easy, fast, brainless features to use so users can do everything naturally to achieve a top user experience!</p>
+        <div>
+          <nav class="cl-effect-5">
+            <a id="projects_header" class="pt-button anim" data-page="2">
+              <span data-hover="Projects">
+                <div>Projects</div>
+              </span>
+            </a>
+            <a id="skills_header" class="pt-button anim" data-page="3">
+              <span data-hover="Skills">
+                <div>Skills</div>
+              </span>
+            </a>
+            <a class="pt-button anim" data-page="1">
+              <span data-hover="About">
+                <div>About</div>
+              </span>
+            </a>
+          </nav>
+        </div>
+        
+      </header>
+    </div>
+
+    <!-- PAGE TRANSITION -->
+    <div id="pt-main" class="pt-perspective">
+      <!-- HOME PAGE -->
+      <div class="pt-page pt-page-1">
+        <!-- MAIN CONTENT -->
+        <div id="main_content_wrap" class="outer">
+          <div class="inner">
+            <!-- <img class="portrait" src="images/tiagosousa.jpg"/> -->
+            <h1 id="project_title">Tiago Sousa</h1>
+            <h2 id="project_tagline">Web Developer</h2>
+          </div>
+
+          <!-- INTRODUCTION -->
+          <div class="intro">
+            <section id="introduction" class="inner">
+              <p>I always wondered how to create a website and while taking my B.Sc. in Computer Science and Engineering, I decided to deep dive and learn more about it. I was glad that I found really soon my true area of interest:
+              <span class="highlight">Web Development</span>
+              I liked the web world so much that I decided to look for a job and suddenly I was working for a company. I am not going to lie, studies turned out to be boring because I was learning so much more working in web and learning is my drive and motivation. I specially like frontend technologies and developing easy, fast, brainless features to use so users can do everything naturally to achieve a top user experience!</p>
+            </section>
+          </div>
+
+          <!-- VIEW PROJECTS BUTTON -->
+          <section class="inner view_projects_bt">
+            <div data-page="2" class="button pt-button">View Projects</div>
           </section>
         </div>
+      </div>
 
-        <!-- VIEW PROJECTS BUTTON -->
-        <section class="inner view_projects_bt">
-          <div data-page="2" class="button pt-button">View Projects</div>
+      <!-- PROJECTS PAGE-->
+      <div class="pt-page pt-page-2 outer">
+        <div class="inner">
+          <!-- <img class="projects_portrait" src="images/html_css_js.png"/> -->
+          <h1 id="project_title">Projects</h1>
+        </div>
+        <section class="inner">
+          <div class="gallery projects-right">
+            <div class="cell">
+              <!-- <img src="images/tetris-lisp.jpg"/> -->
+              <p>This project implements in Common Lisp an artificial intelligence agent that solves a tetris puzzle.</p>
+              <p>
+                <a href="#" style="margin-right: 50px;">Demo soon...</a>
+                <a href="https://github.com/TiagoPortfolio/tetris-lisp">View Repo</a>
+              </p>
+            </div>
+            <div class="cell">
+              <!-- <img src="images/smartwatch.jpg"/> -->
+              <!-- <p>iRave Smartwatch Prototype - <a href="http://tiagoportfolio.github.io/smartwatch">iRave</a></p> -->
+              <p>This project simulates a Smartwatch in real scale with 1.5 inches where its purpose is to give maximum utility in the context of music festivals.</p>
+              <p>
+                <a href="http://tiagoportfolio.github.io/smartwatch" style="margin-right: 50px;">View Demo</a>
+                <a href="https://github.com/TiagoPortfolio/smartwatch">View Repo</a>
+              </p>
+            </div>
+            <div class="cell">
+              <!-- <p>Kitt Car Prototype - <a href="http://tiagoportfolio.github.io/carkitt">Kitt</a></p> -->
+              <!-- <img src="images/events.jpg"/> -->
+              <p style="margin:0px; font-size:13px;">>This project lists events ordered chronologically automatically through AJAX requests to the database. Events are added through an admin backoffice where it is possible to edit every detail of the event including image upload.</p>
+              <p style="margin-top:5px; font-size:13px;">
+                <a href="http://www.aptoide.com/page/events">View Aptoide events page</a>
+                <br>
+                <a href="#">Demo and Repo in development...</a>
+              </p>
+            </div>
+            <div class="cell">
+              <!-- <p>Kitt Car Prototype - <a href="http://tiagoportfolio.github.io/carkitt">Kitt</a></p> -->
+              <!-- <img src="images/carkitt.jpg"/> -->
+              <p>Intelligent car system prototype that provides usefull features while driving. All system is displayed within the scale of a real car windshield.</p>
+              <p>
+                <a href="http://tiagoportfolio.github.io/carkitt" style="margin-right: 50px;">View Demo</a>
+                <a href="https://github.com/TiagoPortfolio/car-system">View Repo</a>
+              </p>
+            </div>
+          </div>
         </section>
+      </div>
 
-        <!-- FOOTER  -->
-        <div id="footer_wrap" class="outer">
-          <footer class="inner">
-            <p style="margin: 0px;">Published with <a href="https://pages.github.com">GitHub Pages</a></p>
-            <a id="forkme_banner" href="https://github.com/TiagoPortfolio">View on GitHub</a>
-          </footer>
+      <!-- SKILLS PAGE -->
+      <div id="skills-page" class="pt-page pt-page-3 outer">
+        <div class="inner">
+          <img src="images/skills/skills.png"/>
+          <h1 id="skills_title">Skills</h1>
         </div>
-      </div>
-    </div>
 
-    <!-- PROJECTS PAGE-->
-    <div class="pt-page pt-page-2 outer">
-      <div class="inner">
-        <img class="projects_portrait" src="images/html_css_js.png"/>
-        <h1 id="project_title">Projects</h1>
-      </div>
-      <section class="inner" style="margin-top: -1em;">
-        <div class="gallery projects-right">
-          <div class="cell">
-            <img src="images/tetris-lisp.jpg"/>
-            <p>This project implements in Common Lisp an artificial intelligence agent that solves a tetris puzzle.</p>
-            <p>
-              <a href="#" style="margin-right: 50px;">Demo soon...</a>
-              <a href="https://github.com/TiagoPortfolio/tetris-lisp">View Repo</a>
-            </p>
-          </div>
-          <div class="cell">
-            <img src="images/smartwatch.jpg"/>
-            <!-- <p>iRave Smartwatch Prototype - <a href="http://tiagoportfolio.github.io/smartwatch">iRave</a></p> -->
-            <p>This project simulates a Smartwatch in real scale with 1.5 inches where its purpose is to give maximum utility in the context of music festivals.</p>
-            <p>
-              <a href="http://tiagoportfolio.github.io/smartwatch" style="margin-right: 50px;">View Demo</a>
-              <a href="https://github.com/TiagoPortfolio/smartwatch">View Repo</a>
-            </p>
-          </div>
-          <div class="cell">
-            <!-- <p>Kitt Car Prototype - <a href="http://tiagoportfolio.github.io/carkitt">Kitt</a></p> -->
-            <img src="images/events.jpg"/>
-            <p style="margin:0px; font-size:13px;">This project lists events ordered chronologically automatically through AJAX requests to the database. Events are added through an admin backoffice where it is possible to edit every detail of the event including image upload.</p>
-            <p style="margin-top:5px; font-size:13px;">
-              <a href="http://www.aptoide.com/page/events">View Aptoide events page</a>
-              <br>
-              <a href="#">Demo and Repo in development...</a>
-            </p>
-          </div>
-          <div class="cell">
-            <!-- <p>Kitt Car Prototype - <a href="http://tiagoportfolio.github.io/carkitt">Kitt</a></p> -->
-            <img src="images/carkitt.jpg"/>
-            <p>Intelligent car system prototype that provides usefull features while driving. All system is displayed within the scale of a real car windshield.</p>
-            <p>
-              <a href="http://tiagoportfolio.github.io/carkitt" style="margin-right: 50px;">View Demo</a>
-              <a href="https://github.com/TiagoPortfolio/car-system">View Repo</a>
-            </p>
-          </div>
-        </div>
-      </section>
-      <!-- FOOTER  -->
-      <div id="footer_wrap" class="outer">
-        <footer class="inner">
-          <p style="margin: 0px;">Published with <a href="https://pages.github.com">GitHub Pages</a></p>
-          <a id="forkme_banner" href="https://github.com/TiagoPortfolio">View on GitHub</a>
-        </footer>
-      </div>
-    </div>
-
-    <!-- SKILLS PAGE -->
-    <div id="skills-page" class="pt-page pt-page-3 outer">
-      <div class="inner">
-        <img src="images/skills/skills.png"/>
-        <h1 id="skills_title">Skills</h1>
-      </div>
-
-      <section class="inner">
-        <div class="container">
-          <div style="opacity:0;">
-            <div>Professional</div>
-            <div class="skills-imgs">
-              <img src="images/skills/html.png" title="HTML"/>
-              <img src="images/skills/css3.svg" title="CSS"/>
-              <img src="images/skills/js.jpg" title="Javascript"/>
-              <img src="images/skills/jquery.svg" class="img-wrap" style="height: 35px;" title="jQuery"/>
-              <img src="images/skills/php.png" style="height: 50px;" title="PHP"/>
-              <img src="images/skills/psql.png" style="height: 55px; border-radius: 5px;" title="PostgreSQL"/>
-              <img src="images/skills/github.jpg" style="height: 30px; border-radius: 5px;" title="GitHub"/>
-              <img src="images/skills/sublime_text.png" title="Sublime Text"/>
-              <img src="images/skills/eclipse.jpg" style="height: 40px; padding: 2px; background-color: white; border-radius: 5px;" title="Eclipse"/>
+        <section class="inner">
+          <div class="container">
+            <div style="opacity:0;">
+              <div>Professional</div>
+              <div class="skills-imgs">
+                <img src="images/skills/html.png" title="HTML"/>
+                <img src="images/skills/css3.svg" title="CSS"/>
+                <img src="images/skills/js.jpg" title="Javascript"/>
+                <img src="images/skills/jquery.svg" class="img-wrap" style="height: 35px;" title="jQuery"/>
+                <img src="images/skills/php.png" style="height: 50px;" title="PHP"/>
+                <img src="images/skills/psql.png" style="height: 55px; border-radius: 5px;" title="PostgreSQL"/>
+                <img src="images/skills/github.jpg" style="height: 30px; border-radius: 5px;" title="GitHub"/>
+                <img src="images/skills/sublime_text.png" title="Sublime Text"/>
+                <img src="images/skills/eclipse.jpg" style="height: 40px; padding: 2px; background-color: white; border-radius: 5px;" title="Eclipse"/>
+              </div>
+            </div>
+            <div style="opacity:0;">
+              <div>Academic</div>
+              <div class="skills-imgs">
+                <img src="images/skills/java.svg" class="img-wrap" style="height: 90px;" title="Java"/>
+                <img src="images/skills/c.jpg" class="img-wrap" style="height: 90px;" title="C Language"/>
+                <img src="images/skills/c++.jpg" class="img-wrap" title="C++ Language"/>
+                <img src="images/skills/mysql.jpg" class="img-wrap" title="MySQL"/>
+                <img src="images/skills/lisp.png" title="Common Lisp"/>
+                <img src="images/skills/swipl.png" title="SWI-Prolog"/>
+                <img src="images/skills/scheme.jpg" style="border-radius: 35px;" title="PLT Scheme"/>
+                <img src="images/skills/visualstudio.jpg" class="img-wrap" style="height: 35px" title="Visual Studio"/>
+              </div>
+            </div>
+            <div style="opacity:0;">
+              <div>APIs used</div>
+              <div class="skills-imgs">
+                <img src="images/skills/fb.png" style="height:50px;" title="Facebook"/>
+                <img src="images/skills/google+.png" style="height:55px;" title="Google"/>
+                <img src="images/skills/nodejs.jpg" class="img-wrap" style="height: 50px;" title="NodeJS"/>
+                <img src="images/skills/paypal.jpg" class="img-wrap" style="height:45px;" title="Paypal"/>
+                <img src="images/skills/braintree.jpg" class="img-wrap" style="height:45px;" title="Braintree"/>
+                <img src="images/skills/knockoutjs.jpg" style="height: 50px; border-radius:5px;" title="KnockoutJS"/>
+                <img src="images/skills/sails.jpg" class="img-wrap" style="height: 40px;" title="SailsJS"/>
+                <img src="images/skills/shopify.png" class="img-wrap" style="height:50px;" title="Shopify"/>
+              </div>
+            </div>
+            <div style="opacity:0;">
+              <div>Curiosity to learn/improve</div>
+              <div class="skills-imgs">
+                <img src="images/skills/ps.png" style="height: 60px;" title="Photoshop"/>
+                <img src="images/skills/sass.svg" title="Sass"/>
+                <img src="images/skills/less.png" style="height: 50px;" title="Less"/>
+                <img src="images/skills/angularjs.jpg" class="img-wrap" title="AngularJS"/>
+                <img src="images/skills/reactjs.svg" style="border-radius:5px;" title="ReactJS"/>
+                <img src="images/skills/emberjs.jpg" style="border-radius:5px;" title="EmberJS"/>
+                <img src="images/skills/dotnet.jpg" class="img-wrap" style="height: 50px;" title=".NET"/>
+              </div>
             </div>
           </div>
-          <div style="opacity:0;">
-            <div>Academic</div>
-            <div class="skills-imgs">
-              <img src="images/skills/java.svg" class="img-wrap" style="height: 90px;" title="Java"/>
-              <img src="images/skills/c.jpg" class="img-wrap" style="height: 90px;" title="C Language"/>
-              <img src="images/skills/c++.jpg" class="img-wrap" title="C++ Language"/>
-              <img src="images/skills/mysql.jpg" class="img-wrap" title="MySQL"/>
-              <img src="images/skills/lisp.png" title="Common Lisp"/>
-              <img src="images/skills/swipl.png" title="SWI-Prolog"/>
-              <img src="images/skills/scheme.jpg" style="border-radius: 35px;" title="PLT Scheme"/>
-              <img src="images/skills/visualstudio.jpg" class="img-wrap" style="height: 35px" title="Visual Studio"/>
-            </div>
-          </div>
-          <div style="opacity:0;">
-            <div>APIs used</div>
-            <div class="skills-imgs">
-              <img src="images/skills/fb.png" style="height:50px;" title="Facebook"/>
-              <img src="images/skills/google+.png" style="height:55px;" title="Google"/>
-              <img src="images/skills/nodejs.jpg" class="img-wrap" style="height: 50px;" title="NodeJS"/>
-              <img src="images/skills/paypal.jpg" class="img-wrap" style="height:45px;" title="Paypal"/>
-              <img src="images/skills/braintree.jpg" class="img-wrap" style="height:45px;" title="Braintree"/>
-              <img src="images/skills/knockoutjs.jpg" style="height: 50px; border-radius:5px;" title="KnockoutJS"/>
-              <img src="images/skills/sails.jpg" class="img-wrap" style="height: 40px;" title="SailsJS"/>
-              <img src="images/skills/shopify.png" class="img-wrap" style="height:50px;" title="Shopify"/>
-            </div>
-          </div>
-          <div style="opacity:0;">
-            <div>Curiosity to learn/improve</div>
-            <div class="skills-imgs">
-              <img src="images/skills/ps.png" style="height: 60px;" title="Photoshop"/>
-              <img src="images/skills/sass.svg" title="Sass"/>
-              <img src="images/skills/less.png" style="height: 50px;" title="Less"/>
-              <img src="images/skills/angularjs.jpg" class="img-wrap" title="AngularJS"/>
-              <img src="images/skills/reactjs.svg" style="border-radius:5px;" title="ReactJS"/>
-              <img src="images/skills/emberjs.jpg" style="border-radius:5px;" title="EmberJS"/>
-              <img src="images/skills/dotnet.jpg" class="img-wrap" style="height: 50px;" title=".NET"/>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- FOOTER  -->
-      <div id="footer_wrap" class="outer">
-        <footer class="inner">
-          <p style="margin: 0px;">Published with <a href="https://pages.github.com">GitHub Pages</a></p>
-          <a id="forkme_banner" href="https://github.com/TiagoPortfolio">View on GitHub</a>
-        </footer>
+        </section>
       </div>
     </div>
   </div>
