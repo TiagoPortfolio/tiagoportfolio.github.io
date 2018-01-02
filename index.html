@@ -16,6 +16,7 @@
   <script type="text/javascript" src="javascripts/main.js"></script>
   <script type="text/javascript" src="javascripts/page_transitions/modernizr.custom.js"></script>
   <script type="text/javascript" src="javascripts/flickity.pkgd.min.js"></script>
+  <script type="text/javascript" src="javascripts/lazysizes.min.js"></script>
 
   <title>Tiago Sousa - Portfolio</title>
 </head>
@@ -25,7 +26,7 @@
     <div id="header_wrap" class="outer">
       <header>
         <div>
-          <img class="portrait" src="images/tiagosousa_mini.jpg" style="height:31px"/>
+          <img class="lazyload portrait" src="images/tiagosousa_mini.jpg" data-src="images/tiagosousa_mini.jpg" alt="Tiago Sousa - Portfolio" title="Tiago Sousa - Portfolio" style="height:31px"/>
           <nav class="cl-effect-5">
             <a id="home_header" data-page="1" class="pt-button anim focused">
               <span data-hover="Tiago Sousa - Portfolio">
@@ -65,7 +66,7 @@
         <!-- MAIN CONTENT -->
         <div id="main_content_wrap" class="outer">
           <div class="inner">
-            <img class="portrait" src="images/tiagosousa.jpg"/>
+            <img class="lazyload portrait" src="images/tiagosousa_mini.jpg" data-src="images/tiagosousa.jpg" alt="Tiago Sousa - Portfolio" title="Tiago Sousa - Portfolio"/>
             <h1 id="project_title">Tiago Sousa</h1>
             <h2 id="project_tagline">Web Developer</h2>
           </div>
@@ -89,13 +90,13 @@
       <!-- PROJECTS PAGE-->
       <div class="pt-page pt-page-2 outer">
         <div class="inner">
-          <img class="projects_portrait" src="images/html_css_js.png"/>
+          <img class="lazyload projects_portrait" src="images/tiagosousa_mini.jpg" data-src="images/html_css_js.png" alt="Projects" title="Projects"/>
           <h1 id="project_title">Projects</h1>
         </div>
         <section class="inner">
           <div class="gallery projects-right">
             <div class="cell">
-              <img src="images/tetris-lisp.jpg"/>
+              <img class="lazyload" src="images/tiagosousa_mini.jpg" data-src="images/tetris-lisp.jpg" alt="Tetris Lisp" title="Tetris Lisp"/>
               <p>This project implements in Common Lisp an artificial intelligence agent that solves a tetris puzzle.</p>
               <p>
                 <a href="#" style="margin-right: 50px;">Demo soon...</a>
@@ -103,7 +104,7 @@
               </p>
             </div>
             <div class="cell">
-              <img src="images/smartwatch.jpg"/>
+              <img class="lazyload" src="images/tiagosousa_mini.jpg" data-src="images/smartwatch.jpg" alt="Smartwatch iRave" title="Smartwatch iRave"/>
               <p>iRave Smartwatch Prototype - <a href="http://tiagoportfolio.github.io/smartwatch">iRave</a></p>
               <p>This project simulates a Smartwatch in real scale with 1.5 inches where its purpose is to give maximum utility in the context of music festivals.</p>
               <p>
@@ -113,7 +114,7 @@
             </div>
             <div class="cell">
               <p>Kitt Car Prototype - <a href="http://tiagoportfolio.github.io/carkitt">Kitt</a></p>
-              <img src="images/events.jpg"/>
+              <img class="lazyload" src="images/tiagosousa_mini.jpg" data-src="images/events.jpg" alt="Kitt" title="Kitt"/>
               <p style="margin:0px; font-size:13px;">>This project lists events ordered chronologically automatically through AJAX requests to the database. Events are added through an admin backoffice where it is possible to edit every detail of the event including image upload.</p>
               <p style="margin-top:5px; font-size:13px;">
                 <a href="http://www.aptoide.com/page/events">View Aptoide events page</a>
@@ -123,7 +124,7 @@
             </div>
             <div class="cell">
               <p>Kitt Car Prototype - <a href="http://tiagoportfolio.github.io/carkitt">Kitt</a></p>
-              <img src="images/carkitt.jpg"/>
+              <img class="lazyload" src="images/tiagosousa_mini.jpg" data-src="images/carkitt.jpg" alt="Kitt" title="Kitt"/>
               <p>Intelligent car system prototype that provides usefull features while driving. All system is displayed within the scale of a real car windshield.</p>
               <p>
                 <a href="http://tiagoportfolio.github.io/carkitt" style="margin-right: 50px;">View Demo</a>
@@ -137,7 +138,7 @@
       <!-- SKILLS PAGE -->
       <div id="skills-page" class="pt-page pt-page-3 outer">
         <div class="inner">
-          <img src="images/skills/skills.png"/>
+          <img class="lazyload" src="images/tiagosousa_mini.jpg" data-src="images/skills/skills.png" alt="Skills" title="Skills"/>
           <h1 id="skills_title">Skills</h1>
         </div>
 
@@ -146,53 +147,53 @@
             <div style="opacity:0;">
               <div>Professional</div>
               <div class="skills-imgs">
-                <img src="images/skills/html.png" title="HTML"/>
-                <img src="images/skills/css3.svg" title="CSS"/>
-                <img src="images/skills/js.jpg" title="Javascript"/>
-                <img src="images/skills/jquery.svg" class="img-wrap" style="height: 35px;" title="jQuery"/>
-                <img src="images/skills/php.png" style="height: 50px;" title="PHP"/>
-                <img src="images/skills/psql.png" style="height: 55px; border-radius: 5px;" title="PostgreSQL"/>
-                <img src="images/skills/github.jpg" style="height: 30px; border-radius: 5px;" title="GitHub"/>
-                <img src="images/skills/sublime_text.png" title="Sublime Text"/>
-                <img src="images/skills/eclipse.jpg" style="height: 40px; padding: 2px; background-color: white; border-radius: 5px;" title="Eclipse"/>
+                <img class="lazyload" src="images/tiagosousa_mini.jpg" data-src="images/skills/html.png" alt="HTML" title="HTML"/>
+                <img class="lazyload" src="images/tiagosousa_mini.jpg" data-src="images/skills/css3.svg" alt="CSS" title="CSS"/>
+                <img class="lazyload" src="images/tiagosousa_mini.jpg" data-src="images/skills/js.jpg" alt="Facebook" title="Javascript"/>
+                <img class="lazyload img-wrap" style="height: 35px;" src="images/tiagosousa_mini.jpg" data-src="images/skills/jquery.svg" alt="jQuery" title="jQuery"/>
+                <img class="lazyload" style="height: 50px;" src="images/tiagosousa_mini.jpg" data-src="images/skills/php.png" alt="PHP" title="PHP"/>
+                <img class="lazyload" style="height: 55px; border-radius: 5px;" src="images/tiagosousa_mini.jpg" data-src="images/skills/psql.png" alt="PostgreSQL" title="PostgreSQL"/>
+                <img class="lazyload" style="height: 30px; border-radius: 5px;" src="images/tiagosousa_mini.jpg" data-src="images/skills/github.jpg" alt="GitHub" title="GitHub"/>
+                <img class="lazyload" src="images/tiagosousa_mini.jpg" data-src="images/skills/sublime_text.png" alt="Sublime Text" title="Sublime Text"/>
+                <img class="lazyload" style="height: 40px; padding: 2px; background-color: white; border-radius: 5px;" src="images/tiagosousa_mini.jpg" data-src="images/skills/eclipse.jpg" alt="Eclipse" title="Eclipse"/>
               </div>
             </div>
             <div style="opacity:0;">
               <div>Academic</div>
               <div class="skills-imgs">
-                <img src="images/skills/java.svg" class="img-wrap" style="height: 90px;" title="Java"/>
-                <img src="images/skills/c.jpg" class="img-wrap" style="height: 90px;" title="C Language"/>
-                <img src="images/skills/c++.jpg" class="img-wrap" title="C++ Language"/>
-                <img src="images/skills/mysql.jpg" class="img-wrap" title="MySQL"/>
-                <img src="images/skills/lisp.png" title="Common Lisp"/>
-                <img src="images/skills/swipl.png" title="SWI-Prolog"/>
-                <img src="images/skills/scheme.jpg" style="border-radius: 35px;" title="PLT Scheme"/>
-                <img src="images/skills/visualstudio.jpg" class="img-wrap" style="height: 35px" title="Visual Studio"/>
+                <img class="lazyload img-wrap" src="images/tiagosousa_mini.jpg" data-src="images/skills/java.svg" alt="Java" style="height: 90px;" title="Java"/>
+                <img class="lazyload img-wrap" src="images/tiagosousa_mini.jpg" data-src="images/skills/c.jpg" alt="C Language" style="height: 90px;" title="C Language"/>
+                <img class="lazyload img-wrap" src="images/tiagosousa_mini.jpg" data-src="images/skills/c++.jpg" alt="C++ Language" title="C++ Language"/>
+                <img class="lazyload img-wrap" src="images/tiagosousa_mini.jpg" data-src="images/skills/mysql.jpg" alt="MySQL" title="MySQL"/>
+                <img class="lazyload" src="images/tiagosousa_mini.jpg" data-src="images/skills/lisp.png" alt="Common Lisp" title="Common Lisp"/>
+                <img class="lazyload" src="images/tiagosousa_mini.jpg" data-src="images/skills/swipl.png" alt="SWI-Prolog" title="SWI-Prolog"/>
+                <img class="lazyload" src="images/tiagosousa_mini.jpg" data-src="images/skills/scheme.jpg" alt="PLT Scheme" style="border-radius: 35px;" title="PLT Scheme"/>
+                <img class="lazyload img-wrap" src="images/tiagosousa_mini.jpg" data-src="images/skills/visualstudio.jpg" alt="Visual Studio" style="height: 35px" title="Visual Studio"/>
               </div>
             </div>
             <div style="opacity:0;">
               <div>APIs used</div>
               <div class="skills-imgs">
-                <img src="images/skills/fb.png" style="height:50px;" title="Facebook"/>
-                <img src="images/skills/google+.png" style="height:55px;" title="Google"/>
-                <img src="images/skills/nodejs.jpg" class="img-wrap" style="height: 50px;" title="NodeJS"/>
-                <img src="images/skills/paypal.jpg" class="img-wrap" style="height:45px;" title="Paypal"/>
-                <img src="images/skills/braintree.jpg" class="img-wrap" style="height:45px;" title="Braintree"/>
-                <img src="images/skills/knockoutjs.jpg" style="height: 50px; border-radius:5px;" title="KnockoutJS"/>
-                <img src="images/skills/sails.jpg" class="img-wrap" style="height: 40px;" title="SailsJS"/>
-                <img src="images/skills/shopify.png" class="img-wrap" style="height:50px;" title="Shopify"/>
+                <img class="lazyload" src="images/tiagosousa_mini.jpg" data-src="images/skills/fb.png" alt="Facebook" style="height:50px;" title="Facebook"/>
+                <img class="lazyload" src="images/tiagosousa_mini.jpg" data-src="images/skills/google+.png" alt="Google+" style="height:55px;" title="Google+"/>
+                <img class="lazyload img-wrap" src="images/tiagosousa_mini.jpg" alt="Google+" data-src="images/skills/nodejs.jpg" alt="NodeJS" style="height: 50px;" title="NodeJS"/>
+                <img class="img-wrap" class="lazyload" src="images/tiagosousa_mini.jpg" data-src="images/skills/paypal.jpg" alt="Paypal" style="height:45px;" title="Paypal"/>
+                <img class="lazyload img-wrap" src="images/tiagosousa_mini.jpg" data-src="images/skills/braintree.jpg" alt="Braintree" style="height:45px;" title="Braintree"/>
+                <img class="lazyload" src="images/tiagosousa_mini.jpg" data-src="images/skills/knockoutjs.jpg" alt="KnockoutJS" style="height: 50px; border-radius:5px;" title="KnockoutJS"/>
+                <img class="lazyload img-wrap" src="images/tiagosousa_mini.jpg" data-src="images/skills/sails.jpg" alt="SailsJS" style="height: 40px;" title="SailsJS"/>
+                <img class="lazyload img-wrap" src="images/tiagosousa_mini.jpg" data-src="images/skills/shopify.png" alt="Shopify" style="height:50px;" title="Shopify"/>
               </div>
             </div>
             <div style="opacity:0;">
               <div>Curiosity to learn/improve</div>
               <div class="skills-imgs">
-                <img src="images/skills/ps.png" style="height: 60px;" title="Photoshop"/>
-                <img src="images/skills/sass.svg" title="Sass"/>
-                <img src="images/skills/less.png" style="height: 50px;" title="Less"/>
-                <img src="images/skills/angularjs.jpg" class="img-wrap" title="AngularJS"/>
-                <img src="images/skills/reactjs.svg" style="border-radius:5px;" title="ReactJS"/>
-                <img src="images/skills/emberjs.jpg" style="border-radius:5px;" title="EmberJS"/>
-                <img src="images/skills/dotnet.jpg" class="img-wrap" style="height: 50px;" title=".NET"/>
+                <img class="lazyload" src="images/tiagosousa_mini.jpg" data-src="images/skills/ps.png" alt="Photoshop" title="Photoshop" style="height: 60px;"/>
+                <img class="lazyload" src="images/tiagosousa_mini.jpg" data-src="images/skills/sass.svg" alt="Sass" title="Sass"/>
+                <img class="lazyload" src="images/tiagosousa_mini.jpg" data-src="images/skills/less.png" alt="Less" style="height: 50px;" title="Less"/>
+                <img class="lazyload img-wrap" src="images/tiagosousa_mini.jpg" data-src="images/skills/angularjs.jpg" alt="AngularJS" title="AngularJS"/>
+                <img class="lazyload" src="images/tiagosousa_mini.jpg" data-src="images/skills/reactjs.svg" alt="ReactJS" style="border-radius:5px;" title="ReactJS"/>
+                <img class="lazyload" src="images/tiagosousa_mini.jpg" data-src="images/skills/emberjs.jpg" alt="EmberJS" src="" style="border-radius:5px;" title="EmberJS"/>
+                <img class="lazyload img-wrap" src="images/tiagosousa_mini.jpg" data-src="images/skills/dotnet.jpg" alt=".NET" style="height: 50px;" title=".NET"/>
               </div>
             </div>
           </div>
