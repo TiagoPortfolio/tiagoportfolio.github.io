@@ -328,11 +328,13 @@ Full-Width Styles
 }
 
 #project_title {
-  margin: 0;
+  display: flex;
   color: #FFF;
   font-size: 35px;
   font-weight: 700;
   text-shadow: #111 0px 5px 10px;
+  justify-content: center;
+  text-align: center;
 }
 
 #project_tagline {
@@ -431,7 +433,7 @@ Full-Width Styles
 }
 
 img.portrait{
-  border-radius: 60px;
+  border-radius: 50%;
 }
 
 .highlight{
@@ -507,6 +509,13 @@ img.portrait{
 
 .pt-page-2 section{
   max-width: 95%
+}
+
+.pt-page-2 > div:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 .projects-right {
@@ -667,6 +676,10 @@ img.portrait{
     width: 90px;
   }
 
+  header img.portrait {
+    width: 30px;
+  }
+
   #introduction {
     font-size: 11px;
     padding: 5px 10px;
@@ -739,15 +752,23 @@ img.portrait{
 }
 
 .cell {
-  width: 60%; /* half-width */
-  height: 18em;
+  width: 35%;
+  display: flex;
   margin-right: 10px;
-  padding: 10px 10px;
+  padding: 5px 20px;
+  justify-content: space-evenly;
+  flex-direction: column;
 }
 
-@media screen and ( min-width: 768px ) {
-  /* half-width cells for larger devices */
-  .cell { width: 50%; }
+.cell p {
+  display: flex;
+  font-weight: lighter;
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.cell p:last-child {
+  justify-content: space-evenly;
 }
 
 .cell.is-selected {
@@ -755,15 +776,12 @@ img.portrait{
   background: rgba(192,192,192,0.1); 
 }
 
-.cell p {
-  font-weight: lighter;
-  font-size: 15px;
-  font-family: 'Open Sans', sans-serif;
-}
-
 .cell img {
+  margin: 10px auto;
   border-radius: 5px;
   box-shadow: 0 0 10px black;
+  justify-content: center;
+  display: flex;
 }
 
 .cell a {
