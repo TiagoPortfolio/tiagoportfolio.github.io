@@ -47,7 +47,7 @@ $(document).ready(function(){
 					  pageDots: true,
 					  resize: true,
 					  rightToLeft: false,
-					  setGallerySize: true,
+					  setGallerySize: false,
 					  watchCSS: false,
 					  wrapAround: false
 					});
