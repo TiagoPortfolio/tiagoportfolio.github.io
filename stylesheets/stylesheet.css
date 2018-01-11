@@ -290,7 +290,6 @@ img.portrait{
 }
 
 #skills_title {
-  margin-top: -0.3em;
   color: #FFF;
   font-size: 35px;
   font-weight: 700;
@@ -306,8 +305,14 @@ img.portrait{
 }
 
 #skills-page .container > div {
-  width:20%;
-  margin: 5px;
+  width: 20%;
+  min-width: 300px;
+  text-align: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+  padding: 15px 20px;
   border-radius: 10px;
   text-shadow: #111 0px 5px 10px;
   background-color: rgba(192,192,192,0.1);
@@ -323,14 +328,13 @@ img.portrait{
 }
 
 .skills-imgs {
+  height: 100%;
   vertical-align: middle;
   display: flex;
-  padding: 10px 20px;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   align-content: center;
   align-self: center;
-  justify-self: center;
 }
 
 .skills-imgs a:focus,
@@ -339,9 +343,15 @@ img.portrait{
   text-decoration: none !important;
 }
 
+#skills-page .inner {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
 #skills-page section img {
   height: 70px;
-  margin: 2px;
+  margin: 5px;
   vertical-align: middle;
   display: flex;
   align-self: center;
@@ -357,24 +367,30 @@ img.portrait{
 #skills-page .container > div > div:nth-child(1) {
   -webkit-animation-duration: 0.8s;
   animation-duration: 0.8s;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-#skills-page .container > div:nth-child(2){
-  font-size: 25px;
+#skills-page .container > div:nth-child(1) {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+#skills-page .container > div:nth-child(2) {
+  font-size: 30px;
   font-weight: bold;
 }
 
-#skills-page .container > div:nth-child(1){
-  font-size: 40px;
-  display: flex;
-  justify-content: space-between;
-  font-weight: 700;
-  text-align: center;
-  flex-direction: column;
+#skills-page .container > div:nth-child(3) {
+  font-size: 25px;
 }
 
-#skills-page .container > div:nth-child(3){
-  font-size: 20px;5}
+#skills-page .container > div:nth-child(4) {
+  font-size: 20px;
+}
 
 @-webkit-keyframes flash_div {
   0% {
