@@ -11,6 +11,7 @@ if ('serviceWorker' in navigator) {
 
   var CACHE_NAME = 'my-site-cache-v1';
   var urlsToCache = [
+    '/',
     '/javascripts/flickity.pkgd.min.js',
     '/javascripts/jquery-1.11.2.min.js',
     '/javascripts/main.min.js',
