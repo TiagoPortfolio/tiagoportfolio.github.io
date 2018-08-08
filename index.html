@@ -1,220 +1,245 @@
 <!DOCTYPE html>
-<html class="csstransforms3d">
+<html class="csstransforms3d" lang="en">
+	<head>
+		<meta charset='utf-8'>
+		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="title" content="Tiago Sousa - Web Developer">
+		<meta name="description" content="I always wondered how to create a website and while taking my B.Sc. in Computer Science and Engineering, I decided to deep dive and learn more about it. After taughting myself essencial Web Development skills, I decided to look for a job and suddenly I was working for a company and learning twice as much as before.">
 
-<head>
-  <meta charset='utf-8'>
-  <meta http-equiv="X-UA-Compatible" content="chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Tiago Sousa - Web Developer : Portfolio">
+		<meta name="og:title" content="Tiago Sousa - Web Developer">
+		<meta name="og:description" content="I always wondered how to create a website and while taking my B.Sc. in Computer Science and Engineering, I decided to deep dive and learn more about it. After taughting myself essencial Web Development skills, I decided to look for a job and suddenly I was working for a company and learning twice as much as before.">
+		<meta name="og:type" content="website" property="og:type">
+		<meta name="og:url" content="https://tiagoportfolio.github.io/" property="og:url">
+		<meta name="og:image" content="images/tiagosousa.jpg" property="og:image">
+		<meta name="theme-color" content="#ffffff"/>
 
-  <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/flickity.min.css">
-  <!-- <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css"> -->
-  <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.min.css">
+		<link rel="manifest" href="favicons/site.webmanifest">
+		<link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+		<link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#da532c">
 
-  <script type="text/javascript" src="/service-worker.js" defer></script>
-  <script type="text/javascript" src="javascripts/jquery-1.11.2.min.js" defer></script>
-  <!-- <script type="text/javascript" src="javascripts/main.js"></script> -->
-  <script type="text/javascript" src="javascripts/main.min.js" defer></script>
-  <script type="text/javascript" src="javascripts/flickity.pkgd.min.js" defer></script>
-  <script type="text/javascript" src="javascripts/lazysizes.min.js" defer></script>
+		<link rel="stylesheet" type="text/css" media="screen" href="stylesheets/flickity.min.css">
+		<!-- <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css"> -->
+		<link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.min.css">
+		<script type="text/javascript" src="/service-worker.js" defer></script>
+		<script type="text/javascript" src="javascripts/jquery-1.11.2.min.js" defer></script>
+		<!-- <script type="text/javascript" src="javascripts/main.js"></script> -->
+		<script type="text/javascript" src="javascripts/main.min.js" defer></script>
+		<script type="text/javascript" src="javascripts/flickity.pkgd.min.js" defer></script>
+		<script type="text/javascript" src="javascripts/lazysizes.min.js" defer></script>
+		<script>
+			// (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			// (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			// m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			// })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+			// ga('create', 'UA-101216153-1', 'auto');
+			// ga('send', 'pageview');
 
-  <title>Tiago Sousa - Portfolio</title>
-</head>
-<body>
-  <div class="content-wrapper">
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-      <header>
-        <div>
-          <img class="lazyload portrait" src="images/loading.gif" data-src="images/tiagosousa_mini.jpg" alt="Tiago Sousa - Portfolio" title="Tiago Sousa - Portfolio" style="height:31px"/>
-          <nav class="cl-effect-5">
-            <a id="home_header" data-page="1" class="pt-button anim focused">
-              <span data-hover="Tiago Sousa - Portfolio">
-                <div>Tiago Sousa - Portfolio</div>
-              </span>
-            </a>
-          </nav>
-        </div>
+			if ('serviceWorker' in navigator) {
+				console.log("Will the service worker register?");
+				navigator.serviceWorker.register('service-worker.js')
+					.then(function(reg) {
+						console.log("Yes, it did.");
+					}).catch(function(err) {
+						console.log("No it didn't. This happened: ", err)
+					});
+			}
+		</script>
 
-        <div>
-          <nav class="cl-effect-5">
-            <a id="projects_header" class="pt-button anim" data-page="2">
-              <span data-hover="Projects">
-                <div>Projects</div>
-              </span>
-            </a>
-            <a id="skills_header" class="pt-button anim" data-page="3">
-              <span data-hover="Skills">
-                <div>Skills</div>
-              </span>
-            </a>
-            <a class="pt-button anim" data-page="1">
-              <span data-hover="About">
-                <div>About</div>
-              </span>
-            </a>
-          </nav>
-        </div>
-        
-      </header>
-    </div>
+		<title>Tiago Sousa - Web Developer</title>
+	</head>
+	<body>
+		<div class="content-wrapper">
+			<!-- HEADER -->
+			<div id="header_wrap" class="outer">
+				<header>
+					<div>
+						<img class="lazyload portrait" src="images/loading.gif" data-src="images/tiagosousa_mini.jpg" alt="Tiago Sousa - Portfolio" title="Tiago Sousa - Portfolio" style="height:31px"/>
+						<nav class="cl-effect-5">
+							<a id="home_header" data-page="1" class="pt-button anim focused">
+								<span data-hover="Tiago Sousa - Portfolio">
+									<div>Tiago Sousa - Portfolio</div>
+								</span>
+							</a>
+						</nav>
+					</div>
+					<div>
+						<nav class="cl-effect-5">
+							<a id="projects_header" class="pt-button anim" data-page="2">
+								<span data-hover="Projects">
+									<div>Projects</div>
+								</span>
+							</a>
+							<a id="skills_header" class="pt-button anim" data-page="3">
+								<span data-hover="Skills">
+									<div>Skills</div>
+								</span>
+							</a>
+							<a class="pt-button anim" data-page="1">
+								<span data-hover="About">
+									<div>About</div>
+								</span>
+							</a>
+						</nav>
+					</div>
+				</header>
+			</div>
 
-    <!-- PAGE TRANSITION -->
-    <div id="pt-main" class="pt-perspective">
-      <!-- HOME PAGE -->
-      <div class="pt-page pt-page-1">
-        <!-- MAIN CONTENT -->
-        <div id="main_content_wrap" class="outer">
-          <div class="inner">
-            <img class="lazyload portrait" src="images/loading.gif" data-src="images/tiagosousa.jpg" alt="Tiago Sousa - Portfolio" title="Tiago Sousa - Portfolio"/>
-            <h1 id="project_title">Tiago Sousa</h1>
-            <h2 id="project_tagline">Web Developer</h2>
-          </div>
+			<!-- PAGE TRANSITION -->
+			<div id="pt-main" class="pt-perspective">
+				<!-- HOME PAGE -->
+				<div class="pt-page pt-page-1">
+					<!-- MAIN CONTENT -->
+					<div id="main_content_wrap" class="outer">
+						<div class="inner">
+							<img class="lazyload portrait" src="images/loading.gif" data-src="images/tiagosousa.jpg" alt="Tiago Sousa - Portfolio" title="Tiago Sousa - Portfolio"/>
+							<h1 id="project_title">Tiago Sousa</h1>
+							<h2 id="project_tagline">Web Developer</h2>
+						</div>
+						<!-- INTRODUCTION -->
+						<div class="intro">
+							<section id="introduction" class="inner">
+								<p>I always wondered how to create a website and while taking my B.Sc. in Computer Science and Engineering, I decided to deep dive and learn more about it. I was glad that I found really soon my true area of interest:
+									<span class="highlight">Web Development</span>
+								After taughting myself essencial Web Development skills, I decided to look for a job and suddenly I was working for a company and learning twice as much as before. I specially like frontend technologies and developing easy, fast, brainless features to use so users can do everything naturally to achieve a top user experience!</p>
+							</section>
+						</div>
+						<!-- VIEW PROJECTS BUTTON -->
+						<section class="inner view_projects_bt">
+							<div data-page="2" class="button pt-button">View Projects</div>
+						</section>
+					</div>
+				</div>
 
-          <!-- INTRODUCTION -->
-          <div class="intro">
-            <section id="introduction" class="inner">
-              <p>I always wondered how to create a website and while taking my B.Sc. in Computer Science and Engineering, I decided to deep dive and learn more about it. I was glad that I found really soon my true area of interest:
-              <span class="highlight">Web Development</span>
-              I liked the web world so much that I decided to look for a job and suddenly I was working for a company. I am not going to lie, studies turned out to be boring because I was learning so much more working in web and learning is my drive and motivation. I specially like frontend technologies and developing easy, fast, brainless features to use so users can do everything naturally to achieve a top user experience!</p>
-            </section>
-          </div>
+				<!-- PROJECTS PAGE-->
+				<div class="pt-page pt-page-2 outer">
+					<div class="inner">
+						<img class="lazyload projects_portrait" src="images/loading.gif" data-src="images/html_css_js.png" alt="Projects" title="Projects"/>
+						<h1 id="project_title">Projects</h1>
+					</div>
+					<section class="inner">
+						<div class="gallery">
+							<div class="cell">
+								<img class="lazyload" src="images/loading.gif" data-src="images/tetris-lisp.jpg" alt="Tetris Lisp" title="Tetris Lisp"/>
+								<p>This project implements in Common Lisp an artificial intelligence agent that solves tetris puzzles while maximizing the score.</p>
+								<p>
+									<a href="https://github.com/TiagoPortfolio/tetris-lisp">View Repo</a>
+								</p>
+							</div>
+							<div class="cell">
+								<p>iRave Smartwatch Prototype - <a href="http://tiagoportfolio.github.io/smartwatch">iRave</a></p>
+								<img class="lazyload" src="images/loading.gif" data-src="images/smartwatch.jpg" alt="Smartwatch iRave" title="Smartwatch iRave"/>
+								<p>This project simulates a Smartwatch in real scale with 1.5 inches where its purpose is to give maximum utility in the context of music festivals.</p>
+								<p>
+									<a href="http://tiagoportfolio.github.io/smartwatch" style="margin-right: 50px;">View Demo</a>
+									<a href="https://github.com/TiagoPortfolio/smartwatch">View Repo</a>
+								</p>
+							</div>
+							<div class="cell">
+								<p>Events</p>
+								<img class="lazyload" src="images/loading.gif" data-src="images/events.jpg" alt="Events" title="Events"/>
+								<p style="margin:0px; font-size:13px;">>This project lists events ordered chronologically automatically and fetched through AJAX requests to the database. Events are added through an admin backoffice where it is possible to edit every detail of the event including image upload.</p>
+								<p style="margin-top:5px; font-size:13px;">
+									<a href="http://www.aptoide.com/page/events">View Aptoide Events Page</a>
+								</p>
+							</div>
+							<div class="cell">
+								<p>Kitt Car Prototype - <a href="http://tiagoportfolio.github.io/carkitt">Kitt</a></p>
+								<img class="lazyload" src="images/loading.gif" data-src="images/carkitt.jpg" alt="Kitt" title="Kitt"/>
+								<p>Intelligent car system prototype that provides usefull features while driving. All system is displayed within the scale of a real car windshield.</p>
+								<p>
+									<a href="http://tiagoportfolio.github.io/carkitt" style="margin-right: 50px;">View Demo</a>
+									<a href="https://github.com/TiagoPortfolio/car-system">View Repo</a>
+								</p>
+							</div>
+							<div class="cell">
+								<p>Discord Bot</p>
+								<img class="lazyload" src="images/loading.gif" data-src="images/carkitt.jpg" alt="Discord Bot" title="Discord Bot"/>
+								<p>Custom made Discord bot that tracks user activity in voice/text channels with Points, Sounds, Stats, Dailies, Reputation, Profile and Help systems. All stats and users details are saved in a database. Coded and deployed with NodeJS and Heroku.</p>
+								<p>
+									<a href="https://github.com/TiagoPortfolio/discord-bot">View Repo</a>
+								</p>
+							</div>
+							<div class="cell">
+								<p>Landing Page</p>
+								<img class="lazyload" src="images/loading.gif" data-src="images/carkitt.jpg" alt="Kitt" title="Kitt"/>
+								<p>Fully responsive, optimized and SEO friendly landing page. All CSS and JS are minified, images are only loaded if they are in the viewport.</p>
+								<p>
+									<a href="http://www.snaxkrew.com">View Page</a>
+									<a href="https://github.com/snaxkrew/snaxkrew.github.io">View Repo</a>
+								</p>
+							</div>
+						</div>
+					</section>
+				</div>
 
-          <!-- VIEW PROJECTS BUTTON -->
-          <section class="inner view_projects_bt">
-            <div data-page="2" class="button pt-button">View Projects</div>
-          </section>
-        </div>
-      </div>
-
-      <!-- PROJECTS PAGE-->
-      <div class="pt-page pt-page-2 outer">
-        <div class="inner">
-          <img class="lazyload projects_portrait" src="images/loading.gif" data-src="images/html_css_js.png" alt="Projects" title="Projects"/>
-          <h1 id="project_title">Projects</h1>
-        </div>
-        <section class="inner">
-          <div class="gallery">
-            <div class="cell">
-              <img class="lazyload" src="images/loading.gif" data-src="images/tetris-lisp.jpg" alt="Tetris Lisp" title="Tetris Lisp"/>
-              <p>This project implements in Common Lisp an artificial intelligence agent that solves tetris puzzles while maximizing the score.</p>
-              <p>
-                <a href="https://github.com/TiagoPortfolio/tetris-lisp">View Repo</a>
-              </p>
-            </div>
-            <div class="cell">
-              <p>iRave Smartwatch Prototype - <a href="http://tiagoportfolio.github.io/smartwatch">iRave</a></p>
-              <img class="lazyload" src="images/loading.gif" data-src="images/smartwatch.jpg" alt="Smartwatch iRave" title="Smartwatch iRave"/>
-              <p>This project simulates a Smartwatch in real scale with 1.5 inches where its purpose is to give maximum utility in the context of music festivals.</p>
-              <p>
-                <a href="http://tiagoportfolio.github.io/smartwatch" style="margin-right: 50px;">View Demo</a>
-                <a href="https://github.com/TiagoPortfolio/smartwatch">View Repo</a>
-              </p>
-            </div>
-            <div class="cell">
-              <p>Events</p>
-              <img class="lazyload" src="images/loading.gif" data-src="images/events.jpg" alt="Events" title="Events"/>
-              <p style="margin:0px; font-size:13px;">>This project lists events ordered chronologically automatically and fetched through AJAX requests to the database. Events are added through an admin backoffice where it is possible to edit every detail of the event including image upload.</p>
-              <p style="margin-top:5px; font-size:13px;">
-                <a href="http://www.aptoide.com/page/events">View Aptoide Events Page</a>
-              </p>
-            </div>
-            <div class="cell">
-              <p>Kitt Car Prototype - <a href="http://tiagoportfolio.github.io/carkitt">Kitt</a></p>
-              <img class="lazyload" src="images/loading.gif" data-src="images/carkitt.jpg" alt="Kitt" title="Kitt"/>
-              <p>Intelligent car system prototype that provides usefull features while driving. All system is displayed within the scale of a real car windshield.</p>
-              <p>
-                <a href="http://tiagoportfolio.github.io/carkitt" style="margin-right: 50px;">View Demo</a>
-                <a href="https://github.com/TiagoPortfolio/car-system">View Repo</a>
-              </p>
-            </div>
-            <div class="cell">
-              <p>Discord Bot</p>
-              <img class="lazyload" src="images/loading.gif" data-src="images/carkitt.jpg" alt="Discord Bot" title="Discord Bot"/>
-              <p>Custom made Discord bot that tracks user activity in voice/text channels with Points, Sounds, Stats, Dailies, Reputation, Profile and Help systems. All stats and users details are saved in a database. Coded and deployed with NodeJS and Heroku.</p>
-              <p>
-                <a href="https://github.com/TiagoPortfolio/discord-bot">View Repo</a>
-              </p>
-            </div>
-
-            <div class="cell">
-              <p>Landing Page</p>
-              <img class="lazyload" src="images/loading.gif" data-src="images/carkitt.jpg" alt="Kitt" title="Kitt"/>
-              <p>Fully responsive, optimized and SEO friendly landing page. All CSS and JS are minified, images are only loaded if they are in the viewport.</p>
-              <p>
-                <a href="http://www.snaxkrew.com">View Page</a>
-                <a href="https://github.com/snaxkrew/snaxkrew.github.io">View Repo</a>
-              </p>
-            </div>
-          </div>
-        </section>
-      </div>
-
-      <!-- SKILLS PAGE -->
-      <div id="skills-page" class="pt-page pt-page-3 outer">
-        <div class="inner">
-          <img class="lazyload" src="images/loading.gif" data-src="images/skills/skills.png" alt="Skills" title="Skills"/>
-          <h1 id="skills_title">Skills</h1>
-        </div>
-
-        <section class="inner">
-          <div class="container">
-            <div style="opacity:0;">
-              <div>Professional</div>
-              <div class="skills-imgs">
-                <img class="lazyload" src="images/loading.gif" data-src="images/skills/html.png" alt="HTML" title="HTML"/>
-                <img class="lazyload" src="images/loading.gif" data-src="images/skills/css3.svg" alt="CSS" title="CSS"/>
-                <img class="lazyload" src="images/loading.gif" data-src="images/skills/js.jpg" alt="Javascript" title="Javascript"/>
-                <img class="lazyload img-wrap" style="height: 35px;" src="images/loading.gif" data-src="images/skills/jquery.svg" alt="jQuery" title="jQuery"/>
-                <img class="lazyload" style="height: 50px;" src="images/loading.gif" data-src="images/skills/php.png" alt="PHP" title="PHP"/>
-                <img class="lazyload" style="height: 55px; border-radius: 5px;" src="images/loading.gif" data-src="images/skills/psql.png" alt="PostgreSQL" title="PostgreSQL"/>
-                <img class="lazyload" style="height: 30px; border-radius: 5px;" src="images/loading.gif" data-src="images/skills/github.jpg" alt="GitHub" title="GitHub"/>
-                <img class="lazyload" src="images/loading.gif" data-src="images/skills/sublime_text.png" alt="Sublime Text" title="Sublime Text"/>
-                <img class="lazyload" style="height: 40px; padding: 2px; background-color: white; border-radius: 5px;" src="images/loading.gif" data-src="images/skills/eclipse.jpg" alt="Eclipse" title="Eclipse"/>
-              </div>
-            </div>
-            <div style="opacity:0;">
-              <div>Academic</div>
-              <div class="skills-imgs">
-                <img class="lazyload img-wrap" src="images/loading.gif" data-src="images/skills/java.svg" alt="Java" style="height: 90px;" title="Java"/>
-                <img class="lazyload img-wrap" src="images/loading.gif" data-src="images/skills/c.jpg" alt="C Language" style="height: 90px;" title="C Language"/>
-                <img class="lazyload img-wrap" src="images/loading.gif" data-src="images/skills/c++.jpg" alt="C++ Language" title="C++ Language"/>
-                <img class="lazyload img-wrap" src="images/loading.gif" data-src="images/skills/mysql.jpg" alt="MySQL" title="MySQL"/>
-                <img class="lazyload" src="images/loading.gif" data-src="images/skills/lisp.png" alt="Common Lisp" title="Common Lisp"/>
-                <img class="lazyload" src="images/loading.gif" data-src="images/skills/swipl.png" alt="SWI-Prolog" title="SWI-Prolog"/>
-                <img class="lazyload" src="images/loading.gif" data-src="images/skills/scheme.jpg" alt="PLT Scheme" style="border-radius: 35px;" title="PLT Scheme"/>
-                <img class="lazyload img-wrap" src="images/loading.gif" data-src="images/skills/visualstudio.jpg" alt="Visual Studio" style="height: 35px" title="Visual Studio"/>
-              </div>
-            </div>
-            <div style="opacity:0;">
-              <div>APIs used</div>
-              <div class="skills-imgs">
-                <img class="lazyload" src="images/loading.gif" data-src="images/skills/fb.png" alt="Facebook" style="height:50px;" title="Facebook"/>
-                <img class="lazyload" src="images/loading.gif" data-src="images/skills/google+.png" alt="Google+" style="height:55px;" title="Google+"/>
-                <img class="lazyload img-wrap" src="images/loading.gif" data-src="images/skills/nodejs.jpg" alt="NodeJS" style="height: 50px;" title="NodeJS"/>
-                <img class="lazyload img-wrap" src="images/loading.gif" data-src="images/skills/paypal.jpg" alt="Paypal" style="height:45px;" title="Paypal"/>
-                <img class="lazyload img-wrap" src="images/loading.gif" data-src="images/skills/braintree.jpg" alt="Braintree" style="height:45px;" title="Braintree"/>
-                <img class="lazyload" src="images/loading.gif" data-src="images/skills/knockoutjs.jpg" alt="KnockoutJS" style="height: 50px; border-radius:5px;" title="KnockoutJS"/>
-                <img class="lazyload img-wrap" src="images/loading.gif" data-src="images/skills/sails.jpg" alt="SailsJS" style="height: 40px;" title="SailsJS"/>
-                <img class="lazyload img-wrap" src="images/loading.gif" data-src="images/skills/shopify.png" alt="Shopify" style="height:50px;" title="Shopify"/>
-              </div>
-            </div>
-            <div style="opacity:0;">
-              <div>Curiosity to learn/improve</div>
-              <div class="skills-imgs">
-                <img class="lazyload" src="images/loading.gif" data-src="images/skills/ps.png" alt="Photoshop" title="Photoshop" style="height: 60px;"/>
-                <img class="lazyload" src="images/loading.gif" data-src="images/skills/sass.svg" alt="Sass" title="Sass"/>
-                <img class="lazyload" src="images/loading.gif" data-src="images/skills/less.png" alt="Less" style="height: 50px;" title="Less"/>
-                <img class="lazyload img-wrap" src="images/loading.gif" data-src="images/skills/angularjs.jpg" alt="AngularJS" title="AngularJS"/>
-                <img class="lazyload" src="images/loading.gif" data-src="images/skills/reactjs.svg" alt="ReactJS" style="border-radius:5px;" title="ReactJS"/>
-                <img class="lazyload" src="images/loading.gif" data-src="images/skills/emberjs.jpg" alt="EmberJS" src="" style="border-radius:5px;" title="EmberJS"/>
-                <img class="lazyload img-wrap" src="images/loading.gif" data-src="images/skills/dotnet.jpg" alt=".NET" style="height: 50px;" title=".NET"/>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-    </div>
-  </div>
-</body>
+				<!-- SKILLS PAGE -->
+				<div id="skills-page" class="pt-page pt-page-3 outer">
+					<div class="inner">
+						<img class="lazyload" src="images/loading.gif" data-src="images/skills/skills.png" alt="Skills" title="Skills"/>
+						<h1 id="skills_title">Skills</h1>
+					</div>
+					<section class="inner">
+						<div class="container">
+							<div style="opacity:0;">
+								<div>Professional</div>
+								<div class="skills-imgs">
+									<img class="lazyload" src="images/loading.gif" data-src="images/skills/html.png" alt="HTML" title="HTML"/>
+									<img class="lazyload" src="images/loading.gif" data-src="images/skills/css3.svg" alt="CSS" title="CSS"/>
+									<img class="lazyload" src="images/loading.gif" data-src="images/skills/js.jpg" alt="Javascript" title="Javascript"/>
+									<img class="lazyload img-wrap" style="height: 35px;" src="images/loading.gif" data-src="images/skills/jquery.svg" alt="jQuery" title="jQuery"/>
+									<img class="lazyload" style="height: 50px;" src="images/loading.gif" data-src="images/skills/php.png" alt="PHP" title="PHP"/>
+									<img class="lazyload" style="height: 55px; border-radius: 5px;" src="images/loading.gif" data-src="images/skills/psql.png" alt="PostgreSQL" title="PostgreSQL"/>
+									<img class="lazyload" style="height: 30px; border-radius: 5px;" src="images/loading.gif" data-src="images/skills/github.jpg" alt="GitHub" title="GitHub"/>
+									<img class="lazyload" src="images/loading.gif" data-src="images/skills/sublime_text.png" alt="Sublime Text" title="Sublime Text"/>
+									<img class="lazyload" style="height: 40px; padding: 2px; background-color: white; border-radius: 5px;" src="images/loading.gif" data-src="images/skills/eclipse.jpg" alt="Eclipse" title="Eclipse"/>
+								</div>
+							</div>
+							<div style="opacity:0;">
+								<div>Academic</div>
+								<div class="skills-imgs">
+									<img class="lazyload img-wrap" src="images/loading.gif" data-src="images/skills/java.svg" alt="Java" style="height: 90px;" title="Java"/>
+									<img class="lazyload img-wrap" src="images/loading.gif" data-src="images/skills/c.jpg" alt="C Language" style="height: 90px;" title="C Language"/>
+									<img class="lazyload img-wrap" src="images/loading.gif" data-src="images/skills/c++.jpg" alt="C++ Language" title="C++ Language"/>
+									<img class="lazyload img-wrap" src="images/loading.gif" data-src="images/skills/mysql.jpg" alt="MySQL" title="MySQL"/>
+									<img class="lazyload" src="images/loading.gif" data-src="images/skills/lisp.png" alt="Common Lisp" title="Common Lisp"/>
+									<img class="lazyload" src="images/loading.gif" data-src="images/skills/swipl.png" alt="SWI-Prolog" title="SWI-Prolog"/>
+									<img class="lazyload" src="images/loading.gif" data-src="images/skills/scheme.jpg" alt="PLT Scheme" style="border-radius: 35px;" title="PLT Scheme"/>
+									<img class="lazyload img-wrap" src="images/loading.gif" data-src="images/skills/visualstudio.jpg" alt="Visual Studio" style="height: 35px" title="Visual Studio"/>
+								</div>
+							</div>
+							<div style="opacity:0;">
+								<div>APIs used</div>
+								<div class="skills-imgs">
+									<img class="lazyload" src="images/loading.gif" data-src="images/skills/fb.png" alt="Facebook" style="height:50px;" title="Facebook"/>
+									<img class="lazyload" src="images/loading.gif" data-src="images/skills/google+.png" alt="Google+" style="height:55px;" title="Google+"/>
+									<img class="lazyload img-wrap" src="images/loading.gif" data-src="images/skills/nodejs.jpg" alt="NodeJS" style="height: 50px;" title="NodeJS"/>
+									<img class="lazyload img-wrap" src="images/loading.gif" data-src="images/skills/paypal.jpg" alt="Paypal" style="height:45px;" title="Paypal"/>
+									<img class="lazyload img-wrap" src="images/loading.gif" data-src="images/skills/braintree.jpg" alt="Braintree" style="height:45px;" title="Braintree"/>
+									<img class="lazyload" src="images/loading.gif" data-src="images/skills/knockoutjs.jpg" alt="KnockoutJS" style="height: 50px; border-radius:5px;" title="KnockoutJS"/>
+									<img class="lazyload img-wrap" src="images/loading.gif" data-src="images/skills/sails.jpg" alt="SailsJS" style="height: 40px;" title="SailsJS"/>
+									<img class="lazyload img-wrap" src="images/loading.gif" data-src="images/skills/shopify.png" alt="Shopify" style="height:50px;" title="Shopify"/>
+								</div>
+							</div>
+							<div style="opacity:0;">
+								<div>Curiosity to learn/improve</div>
+								<div class="skills-imgs">
+									<img class="lazyload" src="images/loading.gif" data-src="images/skills/ps.png" alt="Photoshop" title="Photoshop" style="height: 60px;"/>
+									<img class="lazyload" src="images/loading.gif" data-src="images/skills/sass.svg" alt="Sass" title="Sass"/>
+									<img class="lazyload" src="images/loading.gif" data-src="images/skills/less.png" alt="Less" style="height: 50px;" title="Less"/>
+									<img class="lazyload img-wrap" src="images/loading.gif" data-src="images/skills/angularjs.jpg" alt="AngularJS" title="AngularJS"/>
+									<img class="lazyload" src="images/loading.gif" data-src="images/skills/reactjs.svg" alt="ReactJS" style="border-radius:5px;" title="ReactJS"/>
+									<img class="lazyload" src="images/loading.gif" data-src="images/skills/emberjs.jpg" alt="EmberJS" src="" style="border-radius:5px;" title="EmberJS"/>
+									<img class="lazyload img-wrap" src="images/loading.gif" data-src="images/skills/dotnet.jpg" alt=".NET" style="height: 50px;" title=".NET"/>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>

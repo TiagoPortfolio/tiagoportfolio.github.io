@@ -1,0 +1,16 @@
+{
+  "short_name": "Tiago Sousa",
+  "name": "Tiago Sousa - Web Developer",
+  "icons": [
+    {
+  		"src": "/android-chrome-96x96.png",
+        "sizes": "96x96",
+        "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#ffffff"
+}

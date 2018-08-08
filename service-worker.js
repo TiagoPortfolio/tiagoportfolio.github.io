@@ -1,65 +1,76 @@
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('/javascripts/service-worker.js').then(function(registration) {
-      // Registration was successful
-      console.log('ServiceWorker registration successful with scope: ', registration.scope);
-    }, function(err) {
-      // registration failed :(
-      console.log('ServiceWorker registration failed: ', err);
-    });
-  });
+var CACHE_NAME = 'tiagoportfolio-v3';
 
-  var CACHE_NAME = 'my-site-cache-v1';
-  var urlsToCache = [
-    '/',
-    '/javascripts/flickity.pkgd.min.js',
-    '/javascripts/jquery-1.11.2.min.js',
-    '/javascripts/main.min.js',
-    '/stylesheets/flickity.min.css',
-    '/stylesheets/stylesheet.min.css',
-    '/stylesheets/fonts/OpensSans-Light.ttf',
-    '/stylesheets/fonts/OpensSans-Regular.ttf',
-  ];
+// Register service worker
+self.addEventListener('install', function(e) {
+	e.waitUntil(
+		caches.open('CACHE_NAME').then(function(cache) {
+			cache.addAll([
+				'/',
+				'/index.html',
+				// '/snaxkrew/css/snaxkrew.min.css',
+				// '/snaxkrew/js/lazysizes.min.js',
+				// '/snaxkrew/fonts/OpenSans-Regular.ttf',
+				// '/snaxkrew/imgs/grey_background.jpg',
+				// '/snaxkrew/imgs/snaxbanner.png',
+				// '/snaxkrew/imgs/games/ar.png',
+				// '/snaxkrew/imgs/games/battlerite.png',
+				// '/snaxkrew/imgs/games/divinity2.png',
+				// '/snaxkrew/imgs/games/fortnite.png',
+				// '/snaxkrew/imgs/games/gw2.jpg',
+				// '/snaxkrew/imgs/games/hots.png',
+				// '/snaxkrew/imgs/games/lol.png',
+				// '/snaxkrew/imgs/games/overwatch.png',
+				// '/snaxkrew/imgs/games/pubg.png',
+				// '/snaxkrew/imgs/games/r6siege.png',
+				// '/snaxkrew/imgs/games/rl.png',
+				// '/snaxkrew/imgs/games/strife.jpg',
+				// '/snaxkrew/imgs/games/tts.png',
+				// '/snaxkrew/imgs/pros/agreement.svg',
+				// '/snaxkrew/imgs/pros/community.svg',
+				// '/snaxkrew/imgs/pros/games.svg',
+				// '/snaxkrew/imgs/pros/night-events.svg',
+				// '/snaxkrew/imgs/pros/plus-18.svg',
+				// '/snaxkrew/imgs/pros/premium-badge.svg',
+				// '/snaxkrew/imgs/ranks/champion.svg',
+				// '/snaxkrew/imgs/ranks/core.svg',
+				// '/snaxkrew/imgs/ranks/elite.svg',
+				// '/snaxkrew/imgs/ranks/initiate.svg',
+				// '/snaxkrew/imgs/ranks/officer.svg',
+				// '/snaxkrew/imgs/ranks/recruit.svg',
+				// '/snaxkrew/imgs/ranks/up-arrow.svg',
+				// '/snaxkrew/imgs/social/discord-small.svg',
+				// '/snaxkrew/imgs/social/discord.svg',
+				// '/snaxkrew/imgs/social/facebook.png',
+				// '/snaxkrew/imgs/social/twitter.svg',
+				// '/snaxkrew/imgs/social/youtube.png'
+			]);
 
-  self.addEventListener('install', function(event) {
-    // Perform install steps
-    event.waitUntil(
-      caches.open(CACHE_NAME)
-        .then(function(cache) {
-          console.log('Opened cache');
-          return cache.addAll(urlsToCache);
-        })
-    );
-  });
+			// CORS
+			// let urlsToPrefetch = [
+			// 	'https://platform.twitter.com/widgets.js',
+			// 	'https://www.google-analytics.com/analytics.js'
+			// ];
+			// cache.addAll(urlsToPrefetch.map(function(urlToPrefetch) {
+			//   return new Request(urlToPrefetch, { mode: 'no-cors' });
+			// }));
 
-  self.addEventListener('fetch', function(event) {
-    event.respondWith(
-      caches.match(event.request)
-        .then(function(response) {
-          if (response) {
-            return response;
-          }
+			return;
+		})
+	);
+});
 
-          var fetchRequest = event.request.clone();
+// Update service worker
+self.addEventListener('activate', event => {
+  event.waitUntil(self.clients.claim());
+});
 
-          return fetch(fetchRequest).then(
-            function(response) {
-              // Check if we received a valid response
-              if(!response || response.status !== 200 || response.type !== 'basic') {
-                return response;
-              }
+// Get assets from cache
+self.addEventListener('fetch', function(event) {
+	console.log(event.request.url);
+	event.respondWith(
+		caches.match(event.request).then(function(response) {
+			return response || fetch(event.request);
+		})
+	);
+});
 
-              var responseToCache = response.clone();
-
-              caches.open(CACHE_NAME)
-                .then(function(cache) {
-                  cache.put(event.request, responseToCache);
-                });
-
-              return response;
-            }
-          );
-        })
-      );
-  });
-}

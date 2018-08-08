@@ -146,7 +146,7 @@ ol {
   align-items: center;
 }
 
-#project_title {
+.project_title {
   display: flex;
   color: #FFF;
   font-size: 35px;
@@ -472,7 +472,7 @@ img.portrait{
     max-width: 480px;
   }
 
-  #project_title {
+  .project_title {
     font-size: 27px;
   }
 
