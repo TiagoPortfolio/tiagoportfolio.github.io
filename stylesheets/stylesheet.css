@@ -244,12 +244,14 @@ img.portrait{
 
 @font-face {
   font-family:"Open Sans";
-  src: url("fonts/OpenSans-Light.ttf") /* TTF file for CSS3 browsers */
+  src: url("fonts/OpenSans-Regular.ttf") format('truetype'); /* TTF file for CSS3 browsers */
+  font-display: swap;
 }
 
 @font-face {
   font-family:"Josefin Sans";
-  src: url("fonts/JosefinSans-Regular.ttf") /* TTF file for CSS3 browsers */
+  src: url("fonts/JosefinSans-Regular.ttf") format('truetype'); /* TTF file for CSS3 browsers */
+  font-display: swap;
 }
 
 .cl-effect-5 a{
