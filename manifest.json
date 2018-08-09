@@ -6,7 +6,17 @@
   		"src": "/android-chrome-96x96.png",
         "sizes": "96x96",
         "type": "image/png"
-    }
+    },
+	{
+		"src": "snaxkrew/imgs/favicons/manifest_icon_192.png",
+		"type": "image/png",
+		"sizes": "192x192"
+	},
+	{
+		"src": "snaxkrew/imgs/favicons/manifest_icon_512.png",
+		"type": "image/png",
+		"sizes": "512x512"
+	}
   ],
   "start_url": "/",
   "background_color": "#ffffff",
