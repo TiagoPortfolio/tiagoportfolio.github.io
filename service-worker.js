@@ -1,4 +1,4 @@
-var CACHE_NAME = 'tiagoportfolio-v3';
+var CACHE_NAME = 'tiagoportfolio-v4';
 
 // Register service worker
 self.addEventListener('install', function(e) {
