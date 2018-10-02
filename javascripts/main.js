@@ -56,7 +56,7 @@ $(document).ready(function(){
 			activePage = page;
 		}
 
-	    if(page == 3){
+	    if (page == 3) {
 	    	$("#skills-page .container > div:nth-child(1)").addClass('flash_div')
 				.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
 					$(this).removeClass('flash_div');
