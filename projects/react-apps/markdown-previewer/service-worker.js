@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 
 importScripts(
-  "/projects/react-apps/markdown-previewer/build/precache-manifest.1f80db6af1524d01654a0efaed8dd860.js"
+  "/projects/react-apps/markdown-previewer/precache-manifest.5531576d0e108ce5b64f90a38994fbed.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/projects/react-apps/markdown-previewer/build/index.html", {
+workbox.routing.registerNavigationRoute("/projects/react-apps/markdown-previewer/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
