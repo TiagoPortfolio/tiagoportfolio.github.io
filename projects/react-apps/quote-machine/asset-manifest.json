@@ -1,7 +1,7 @@
 {
   "main.css": "/projects/react-apps/quote-machine/static/css/main.00bbee5b.chunk.css",
-  "main.js": "/projects/react-apps/quote-machine/static/js/main.ba83978f.chunk.js",
-  "main.js.map": "/projects/react-apps/quote-machine/static/js/main.ba83978f.chunk.js.map",
+  "main.js": "/projects/react-apps/quote-machine/static/js/main.df0ae90d.chunk.js",
+  "main.js.map": "/projects/react-apps/quote-machine/static/js/main.df0ae90d.chunk.js.map",
   "static/js/1.7fa374e3.chunk.js": "/projects/react-apps/quote-machine/static/js/1.7fa374e3.chunk.js",
   "static/js/1.7fa374e3.chunk.js.map": "/projects/react-apps/quote-machine/static/js/1.7fa374e3.chunk.js.map",
   "runtime~main.js": "/projects/react-apps/quote-machine/static/js/runtime~main.ed6a0492.js",
@@ -9,6 +9,6 @@
   "static/media/logo.svg": "/projects/react-apps/quote-machine/static/media/logo.5d5d9eef.svg",
   "static/css/main.00bbee5b.chunk.css.map": "/projects/react-apps/quote-machine/static/css/main.00bbee5b.chunk.css.map",
   "index.html": "/projects/react-apps/quote-machine/index.html",
-  "precache-manifest.8f005043b5192e9353b2254c45ac5e79.js": "/projects/react-apps/quote-machine/precache-manifest.8f005043b5192e9353b2254c45ac5e79.js",
+  "precache-manifest.ec8ef0d90fd35019b392c12b3712bb7f.js": "/projects/react-apps/quote-machine/precache-manifest.ec8ef0d90fd35019b392c12b3712bb7f.js",
   "service-worker.js": "/projects/react-apps/quote-machine/service-worker.js"
 }

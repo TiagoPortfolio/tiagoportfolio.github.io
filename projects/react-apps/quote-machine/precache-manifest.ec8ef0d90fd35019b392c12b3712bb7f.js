@@ -8,19 +8,19 @@ self.__precacheManifest = [
     "url": "/projects/react-apps/quote-machine/static/js/runtime~main.ed6a0492.js"
   },
   {
-    "revision": "ba83978f24ff69621521",
-    "url": "/projects/react-apps/quote-machine/static/js/main.ba83978f.chunk.js"
+    "revision": "df0ae90d733ff509ac51",
+    "url": "/projects/react-apps/quote-machine/static/js/main.df0ae90d.chunk.js"
   },
   {
     "revision": "7fa374e3898db1803a0b",
     "url": "/projects/react-apps/quote-machine/static/js/1.7fa374e3.chunk.js"
   },
   {
-    "revision": "ba83978f24ff69621521",
+    "revision": "df0ae90d733ff509ac51",
     "url": "/projects/react-apps/quote-machine/static/css/main.00bbee5b.chunk.css"
   },
   {
-    "revision": "7096fa88768746d404be9837b136d392",
+    "revision": "5b7402009a863baff1dce07fdf4ebf44",
     "url": "/projects/react-apps/quote-machine/index.html"
   }
 ];
