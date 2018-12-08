@@ -520,9 +520,9 @@ section.inner.projects {
 }
 
 .cell {
-	width: 30%;
+	width: 350px;
     display: flex;
-    margin: 1em 0;
+    margin: 1em;
     border: 1px solid black;
     border-radius: 5px;
     background: #f9f9f9;
@@ -530,7 +530,7 @@ section.inner.projects {
     -moz-box-shadow: 0 5px 20px 5px rgba(218, 218, 218, 0.2),0 6px 20px 0 rgba(0,0,0,.19)!important;
     box-shadow: 0 5px 20px 5px rgba(218, 218, 218, 0.2),0 6px 20px 0 rgba(0,0,0,.19) !important;
     padding: 5px 20px;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-direction: column;
 }
 
@@ -566,14 +566,14 @@ section.inner.projects {
 	text-decoration: none;
 	font-weight: bold;
     text-shadow: none;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 5px;
+    border-radius: 15px;
+    padding: 5px 10px;
     font-size: 14px;
     font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
 }
 
 .cell a:hover {
+	background: #008acc;
     transition: 0.25s ease-out;
 }
 
