@@ -260,20 +260,20 @@ img.portrait{
 }
 
 section.projects {
-    color: black;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+	color: black;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
 
 section.inner.projects {
-    padding: 0 10px;
+	padding: 0 10px;
 }
 
 .projects .project-title {
 	font-size: 15px;
-    font-weight: bold;
-    align-self: center;
+	font-weight: bold;
+	align-self: center;
 }
 
 .pt-page-2, .pt-page-3 {
@@ -521,24 +521,23 @@ section.inner.projects {
 
 .cell {
 	width: 350px;
-    display: flex;
-    margin: 1em;
-    border: 1px solid black;
-    border-radius: 5px;
-    background: #f9f9f9;
-    -webkit-box-shadow: 0 5px 20px 5px rgba(218, 218, 218, 0.2),0 6px 20px 0 rgba(0,0,0,.19)!important;
-    -moz-box-shadow: 0 5px 20px 5px rgba(218, 218, 218, 0.2),0 6px 20px 0 rgba(0,0,0,.19)!important;
-    box-shadow: 0 5px 20px 5px rgba(218, 218, 218, 0.2),0 6px 20px 0 rgba(0,0,0,.19) !important;
-    padding: 5px 20px;
-    justify-content: space-between;
-    flex-direction: column;
+	display: flex;
+	margin: 1em;
+	border-radius: 5px;
+	background: #f9f9f9;
+	-webkit-box-shadow: 0 5px 20px 5px rgba(218, 218, 218, 0.2),0 6px 20px 0 rgba(0,0,0,.19)!important;
+	-moz-box-shadow: 0 5px 20px 5px rgba(218, 218, 218, 0.2),0 6px 20px 0 rgba(0,0,0,.19)!important;
+	box-shadow: 0 5px 20px 5px rgba(218, 218, 218, 0.2),0 6px 20px 0 rgba(0,0,0,.19) !important;
+	padding: 5px 20px;
+	justify-content: space-between;
+	flex-direction: column;
 }
 
 .cell p {
 	display: flex;
 	font-weight: lighter;
 	font-size: 13px;
-    text-shadow: none;
+	text-shadow: none;
 	font-family: 'Open Sans', sans-serif;
 }
 
@@ -561,20 +560,21 @@ section.inner.projects {
 }
 
 .cell a {
-    color: white;
-    background: #00adff;
+	color: #00adff;
 	text-decoration: none;
 	font-weight: bold;
-    text-shadow: none;
-    border-radius: 15px;
-    padding: 5px 10px;
-    font-size: 14px;
-    font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
+	text-shadow: none;
+	border: 2px solid #00adff;
+	border-radius: 15px;
+	padding: 5px 10px;
+	font-size: 14px;
+	font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
 }
 
 .cell a:hover {
-	background: #008acc;
-    transition: 0.25s ease-out;
+	background: #00adff;
+	transition: all 0.2s ease-in-out;
+	color: white;
 }
 
 /* hide disabled button */
