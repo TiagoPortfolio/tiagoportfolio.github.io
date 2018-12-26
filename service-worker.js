@@ -1,9 +1,10 @@
-var CACHE_NAME = 'tiagoportfolio-v9';
+const CACHE_NAME = 'tiagoportfolio-v10';
 
 // Register service worker
-self.addEventListener('install', function(e) {
+self.addEventListener('install', function (e) {
+	self.skipWaiting();
 	e.waitUntil(
-		caches.open('CACHE_NAME').then(function(cache) {
+		caches.open('CACHE_NAME').then(function (cache) {
 			cache.addAll([
 				'/',
 				'/index.html',
@@ -51,14 +52,25 @@ self.addEventListener('install', function(e) {
 
 // Update service worker
 self.addEventListener('activate', event => {
-  event.waitUntil(self.clients.claim());
+	// delete any caches that aren't in expectedCaches
+	event.waitUntil(
+		caches.keys().then(keys => Promise.all(
+		  keys.map(key => {
+			if (![CACHE_NAME].includes(key)) {
+			  return caches.delete(key);
+			}
+		  })
+		)).then(() => {
+		  console.log('V2 now ready to handle fetches!');
+		})
+	  );
 });
 
 // Get assets from cache
-self.addEventListener('fetch', function(event) {
+self.addEventListener('fetch', function (event) {
 	console.log(event.request.url);
 	event.respondWith(
-		caches.match(event.request).then(function(response) {
+		caches.match(event.request).then(function (response) {
 			return response || fetch(event.request);
 		})
 	);
