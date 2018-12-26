@@ -1,4 +1,4 @@
-const CACHE_NAME = 'tiagoportfolio-v14';
+const CACHE_NAME = 'tiagoportfolio-v15';
 
 // Register service worker
 self.addEventListener('install', function (e) {
@@ -55,23 +55,25 @@ self.addEventListener('activate', event => {
 	// delete any caches that aren't in expectedCaches
 	event.waitUntil(
 		caches.keys().then(keys => Promise.all(
-		  keys.map(key => {
-			if (![CACHE_NAME].includes(key)) {
-			  return caches.delete(key);
-			}
-		  })
+			keys.map(key => {
+				if (![CACHE_NAME].includes(key)) {
+					return caches.delete(key);
+				}
+			})
 		)).then(() => {
-		  console.log('V2 now ready to handle fetches!');
+			console.log('V2 now ready to handle fetches!');
 		})
-	  );
+	);
 });
 
 // Get assets from cache
-self.addEventListener('fetch', function (event) {
+self.addEventListener('fetch', event => {
 	console.log(event.request.url);
 	event.respondWith(
-		caches.match(event.request).then(function (response) {
-			return response || fetch(event.request);
+		caches.match(event.request).then(response => {
+			return response ||
+				(e.request.cache === 'only-if-cached' && e.request.mode !== 'same-origin') ||
+				fetch(event.request)
 		})
 	);
 });
