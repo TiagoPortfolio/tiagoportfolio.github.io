@@ -1,4 +1,4 @@
-const CACHE_NAME = 'tiagoportfolio-v15';
+const CACHE_NAME = 'tiagoportfolio-v16';
 
 // Register service worker
 self.addEventListener('install', function (e) {
@@ -72,7 +72,7 @@ self.addEventListener('fetch', event => {
 	event.respondWith(
 		caches.match(event.request).then(response => {
 			return response ||
-				(e.request.cache === 'only-if-cached' && e.request.mode !== 'same-origin') ||
+				(event.request.cache === 'only-if-cached' && event.request.mode !== 'same-origin') ||
 				fetch(event.request)
 		})
 	);
