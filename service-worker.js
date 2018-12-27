@@ -1,4 +1,4 @@
-const CACHE_NAME = 'tiagoportfolio-v17';
+const CACHE_NAME = 'tiagoportfolio-v18';
 
 // Register service worker
 self.addEventListener('install', function (e) {
