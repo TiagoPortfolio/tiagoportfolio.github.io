@@ -27,10 +27,8 @@
 		<link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 		<!-- <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.min.css"> -->
 
-		<script type="text/javascript" src="javascripts/jquery-3.3.1.min.js" defer></script>
 		<script type="text/javascript" src="javascripts/main.js" defer></script>
 		<!-- <script type="text/javascript" src="javascripts/main.min.js" defer></script> -->
-		<script type="text/javascript" src="javascripts/flickity.pkgd.min.js" defer></script>
 		<script type="text/javascript" src="javascripts/lazysizes.min.js" defer></script>
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -41,15 +39,37 @@
 			gtag('js', new Date());
 			gtag('config', 'UA-101216153-2');
 
-			if ('serviceWorker' in navigator) {
-				console.log("Will the service worker register?");
-				navigator.serviceWorker.register('./service-worker.js')
-					.then(function(reg) {
-						console.log("Yes, it did.");
-					}).catch(function(err) {
-						console.log("No it didn't. This happened: ", err)
-					});
-			}
+			window.isUpdateAvailable = new Promise(function(resolve, reject) {
+				// register service worker file
+				navigator.serviceWorker.register('service-worker.js')
+					.then(reg => {
+						console.log("Service Worker registered!")
+						reg.onupdatefound = () => {
+							const installingWorker = reg.installing;
+							installingWorker.onstatechange = () => {
+								switch (installingWorker.state) {
+									case 'installed':
+										if (navigator.serviceWorker.controller) {
+											// new update available
+											resolve(true);
+										} else {
+											// no update available
+											resolve(false);
+										}
+										break;
+								}
+							};
+						};
+					})
+					.catch(err => console.error('[Service Worker ERROR]', err));
+			});
+
+			window['isUpdateAvailable']
+				.then(isAvailable => {
+					if (isAvailable) {
+						this.document.getElementById("service-worker_update").classList.toggle('show');
+					}
+				});
 		</script>
 
 		<title>Tiago Sousa - Web Developer</title>
@@ -225,6 +245,14 @@
 						</div>
 					</section>
 				</div>
+			</div>
+		</div>
+		
+		<div id="service-worker_update">
+			<div id="service-worker_toast">
+				<p>A new version of this page is available!</p>
+				<a id="refresh-page">Refresh</a>
+				<a id="close-toast">⤫</a>
 			</div>
 		</div>
 	</body>
