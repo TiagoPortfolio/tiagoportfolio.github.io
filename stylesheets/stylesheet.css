@@ -113,7 +113,7 @@ html {
 
 body {
 	color: #ffecec !important;
-	font-family: "Myriad Pro", Calibri, Helvetica, Arial, sans-serif !important;
+	font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif !important;
 	line-height: 1.5 !important;
 	-webkit-font-smoothing: antialiased !important;
 	background-image: url(../images/grey_background.jpg) !important;
@@ -137,7 +137,7 @@ h6 {
 	margin: 10px 0;
 	font-weight: 700;
 	color: #222222;
-	font-family: "Lucida Grande", "Calibri", Helvetica, Arial, sans-serif;
+	font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
 	letter-spacing: -1px;
 }
 
@@ -149,7 +149,7 @@ h1 {
 h2 {
 	padding-bottom: 10px;
 	font-size: 32px;
-	background: url("../images/bg_hr.png") repeat-x bottom;
+	background: url('../images/bg_hr.png') repeat-x bottom;
 }
 
 p {
@@ -162,7 +162,6 @@ a {
 	text-decoration: none;
 	color: #007edf;
 	text-shadow: none;
-
 	transition: color 0.5s ease;
 	transition: text-shadow 0.5s ease;
 	-webkit-transition: color 0.5s ease;
@@ -218,7 +217,7 @@ ol {
 	margin-bottom: 5px;
 	display: flex;
 	justify-content: space-between;
-	font-family: "Josefin Sans", sans-serif;
+	font-family: 'Josefin Sans', sans-serif;
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
@@ -273,7 +272,7 @@ ol {
 	color: #e5e5e5;
 	text-align: justify;
 	font-size: 14px;
-	font-family: "Open Sans", sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	padding: 5px 10px;
 	margin: 0px 25px;
 	border-radius: 10px;
@@ -290,7 +289,7 @@ img.portrait {
 	justify-content: center;
 	color: white;
 	font-size: 20px;
-	font-family: "Josefin Sans", sans-serif;
+	font-family: 'Josefin Sans', sans-serif;
 	font-weight: lighter;
 	text-shadow: #111 2px 2px 1px;
 }
@@ -309,7 +308,7 @@ img.portrait {
 	cursor: pointer;
 	text-decoration: none;
 	text-align: center;
-	font-family: "Lucida Grande", "Calibri", Helvetica, Arial, sans-serif;
+	font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
 }
 
 .button:hover {
@@ -337,14 +336,16 @@ img.portrait {
 }
 
 @font-face {
-	font-family: "Open Sans";
-	src: url("fonts/OpenSans-Regular.ttf") format("truetype"); /* TTF file for CSS3 browsers */
+	font-family: 'Open Sans';
+	src: url('fonts/OpenSans-Regular.ttf') format('truetype');
+	/* TTF file for CSS3 browsers */
 	font-display: swap;
 }
 
 @font-face {
-	font-family: "Josefin Sans";
-	src: url("fonts/JosefinSans-Regular.ttf") format("truetype"); /* TTF file for CSS3 browsers */
+	font-family: 'Josefin Sans';
+	src: url('fonts/JosefinSans-Regular.ttf') format('truetype');
+	/* TTF file for CSS3 browsers */
 	font-display: swap;
 }
 
@@ -354,20 +355,60 @@ img.portrait {
 }
 
 section.projects {
+	padding: 0 10px;
 	color: black;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 }
 
-section.inner.projects {
-	padding: 0 10px;
+.project {
+	position: relative;
 }
 
-.projects .project-title {
+.project .project-preview {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-self: center;
+	flex-direction: column;
+	justify-content: center;
+	transform: scale(1);
+	transition: 0.25s ease-in-out;
+}
+
+.project .project-title {
 	font-size: 15px;
 	font-weight: bold;
 	align-self: center;
+}
+
+.project .project-details {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 0rem 2rem;
+	opacity: 0;
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	justify-content: center;
+	border-radius: 10px;
+	-webkit-transition: 0.45s ease-in-out;
+	transition: 0.45s ease-in-out;
+}
+
+.project:hover .project-preview {
+	transform: scale(1.1);
+	transition: 0.25s ease-in-out;
+}
+
+.project:hover .project-details {
+	opacity: 1;
+	background-color: #272727;
+	box-shadow: 0px 0px 60px rgba(192, 192, 192, 0.3);
 }
 
 .pt-page-2 section {
@@ -382,7 +423,7 @@ section.inner.projects {
 }
 
 #skills-page {
-	font-family: "Myriad Pro", Calibri, Helvetica, Arial, sans-serif;
+	font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
 }
 
 #skills-page img {
@@ -420,9 +461,6 @@ section.inner.projects {
 
 .gray-container {
 	min-width: 300px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
 	padding: 15px 20px;
 	border-radius: 10px;
 	text-shadow: #111 0px 5px 10px;
@@ -506,42 +544,33 @@ section.inner.projects {
 	body {
 		font-size: 14px;
 	}
-
 	img.portrait {
 		width: 90px;
 	}
-
 	header img.portrait {
 		width: 30px;
 	}
-
 	#introduction {
 		font-size: 11px;
 		padding: 5px 10px;
 		margin: 0px 10px;
 		box-shadow: 0px 0px 30px rgba(192, 192, 192, 0.3);
 	}
-
 	#downloads {
 		display: none;
 	}
-
 	.inner {
 		max-width: 480px;
 	}
-
 	.page_title {
 		font-size: 27px;
 	}
-
 	#page_tagline {
 		font-size: 20px;
 	}
-
 	h1 {
 		font-size: 28px;
 	}
-
 	h2 {
 		font-size: 24px;
 	}
@@ -551,12 +580,10 @@ section.inner.projects {
 	#header_wrap header div:first-child nav {
 		display: none;
 	}
-
 	#header_wrap header div:first-child img {
 		position: absolute;
 		left: 15px;
 	}
-
 	#header_wrap header {
 		display: flex;
 		justify-content: center;
@@ -569,15 +596,15 @@ section.inner.projects {
 	text-shadow: #111 0px 5px 10px;
 	color: white;
 	width: 350px;
-	margin: 1em;
-	padding: 5px 20px;
+	margin: 1rem;
+	padding: 1rem 2rem;
 }
 
 .cell p {
 	display: flex;
 	font-weight: lighter;
-	font-size: 13px;
-	font-family: "Open Sans", sans-serif;
+	font-size: 15px;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .cell p:last-child {
@@ -607,7 +634,7 @@ section.inner.projects {
 	border-radius: 15px;
 	padding: 5px 10px;
 	font-size: 14px;
-	font-family: "Lucida Grande", "Calibri", Helvetica, Arial, sans-serif;
+	font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
 }
 
 .cell a:hover {
@@ -617,6 +644,7 @@ section.inner.projects {
 }
 
 /* hide disabled button */
+
 .flickity-prev-next-button:disabled {
 	display: none;
 }
@@ -649,12 +677,13 @@ nav a:focus {
 }
 
 /* Effect 2: 3D rolling links, idea from http://hakim.se/thoughts/rolling-links */
+
 .cl-effect-2 a {
 	line-height: 44px;
 	-webkit-perspective: 1000px;
 	-moz-perspective: 1000px;
 	perspective: 1000px;
-	font-family: "Josefin Sans", sans-serif;
+	font-family: 'Josefin Sans', sans-serif;
 	margin: 5px 10px;
 }
 
@@ -710,6 +739,7 @@ nav a:focus {
 }
 
 /* Effect 5: same word slide in */
+
 .cl-effect-5 a {
 	overflow: hidden;
 	padding: 0 5px;
@@ -784,7 +814,7 @@ nav a:focus {
 	color: white;
 	font-weight: lighter;
 	font-size: 14px;
-	font-family: "Open Sans", sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	margin-right: 10px;
 }
 
@@ -803,6 +833,7 @@ nav a:focus {
 	color: white;
 	background-color: #00adff;
 }
+
 #service-worker_toast #close-toast {
 	color: white;
 	text-decoration: none;
