@@ -42,7 +42,6 @@ h1 {
 h2 {
 	padding-bottom: 10px;
 	font-size: 32px;
-	background: url('../images/bg_hr.png') repeat-x bottom;
 }
 
 p {
@@ -150,6 +149,7 @@ ol {
 }
 
 #main_content_wrap {
+	margin-top: 5%;
 	text-align: center;
 }
 
@@ -311,7 +311,7 @@ section.projects {
 }
 
 .pt-page-2 section {
-	max-width: 65%;
+	max-width: 1200px;
 }
 
 .pt-page-2 > div:first-child {
@@ -360,6 +360,7 @@ section.projects {
 
 .gray-container {
 	min-width: 300px;
+	margin: 10px;
 	padding: 15px 20px;
 	border-radius: 10px;
 	text-shadow: #111 0px 5px 10px;

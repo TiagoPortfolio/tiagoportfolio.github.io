@@ -1,4 +1,4 @@
-const CACHE_NAME = 'tiagoportfolio-v19';
+const CACHE_NAME = 'tiagoportfolio-v20';
 
 // Register service worker
 self.addEventListener('install', function (e) {
@@ -14,18 +14,17 @@ self.addEventListener('install', function (e) {
 				'/javascripts/main.min.js',
 				'/javascripts/flickity.pkgd.min.js',
 				'/javascripts/lazysizes.min.js',
+				'/images/grey_background.jpg',
 				'/images/loading.gif',
 				'/images/tiagosousa_mini.jpg',
 				'/images/tiagosousa.jpg',
-				'/images/html_css_js.png',
 				'/images/skills/skills.png',
 				'/images/skills/html.png',
 				'/images/skills/css3.svg',
 				'/images/skills/js.jpg',
 				'/images/skills/php.png',
 				'/images/skills/psql.png',
-				'/images/skills/github.jpg',
-				'/images/skills/mysql.jpg',
+				'/images/skills/git.jpg',
 				'/images/skills/fb.png',
 				'/images/skills/googleplus.png',
 				'/images/skills/paypal.jpg',
@@ -33,7 +32,10 @@ self.addEventListener('install', function (e) {
 				'/images/skills/shopify.png',
 				'/images/skills/reactjs.svg',
 				'/images/skills/nodejs.jpg',
-				'/images/skills/sass.svg'
+				'/images/skills/sass.svg',
+				'/images/projects/landing_page.jpg',
+				'/images/projects/drumpad.png',
+				'/images/projects/discord.svg',
 			]);
 
 			// CORS
