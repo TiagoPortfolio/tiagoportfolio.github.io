@@ -1,110 +1,3 @@
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font: inherit;
-	vertical-align: baseline;
-}
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-	display: block;
-}
-
-ol,
-ul {
-	list-style: none;
-}
-
 html {
 	box-sizing: border-box;
 	height: 100%;
@@ -154,7 +47,8 @@ h2 {
 
 p {
 	margin: 10px 0;
-	text-shadow: 1px 2px 2px black;
+	color: #d0d0d0;
+	text-shadow: 1px 2px 2px #191919;
 }
 
 a {
@@ -217,7 +111,7 @@ ol {
 	margin-bottom: 5px;
 	display: flex;
 	justify-content: space-between;
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Gill Sans', sans-serif;
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
@@ -269,10 +163,9 @@ ol {
 }
 
 #introduction {
-	color: #e5e5e5;
 	text-align: justify;
-	font-size: 14px;
-	font-family: 'Open Sans', sans-serif;
+	font-size: 17px;
+	font-family: 'Gill Sans', sans-serif;
 	padding: 5px 10px;
 	margin: 0px 25px;
 	border-radius: 10px;
@@ -289,8 +182,7 @@ img.portrait {
 	justify-content: center;
 	color: white;
 	font-size: 20px;
-	font-family: 'Josefin Sans', sans-serif;
-	font-weight: lighter;
+	font-family: 'Gill Sans', sans-serif;
 	text-shadow: #111 2px 2px 1px;
 }
 
@@ -337,15 +229,17 @@ img.portrait {
 
 @font-face {
 	font-family: 'Open Sans';
-	src: url('fonts/OpenSans-Regular.ttf') format('truetype');
+	src: local('fonts/OpenSans-Regular.ttf'),
+		url('fonts/OpenSans-Regular.ttf') format('truetype');
 	/* TTF file for CSS3 browsers */
 	font-display: swap;
 }
 
 @font-face {
-	font-family: 'Josefin Sans';
-	src: url('fonts/JosefinSans-Regular.ttf') format('truetype');
-	/* TTF file for CSS3 browsers */
+	font-family: 'Gill Sans';
+	font-style: normal;
+	font-weight: normal;
+	src: local('fonts/Gill Sans'), url('fonts/Gill Sans.woff') format('woff');
 	font-display: swap;
 }
 
@@ -378,8 +272,7 @@ section.projects {
 }
 
 .project .project-title {
-	font-size: 15px;
-	font-weight: bold;
+	font-size: 19px;
 	align-self: center;
 }
 
@@ -409,6 +302,12 @@ section.projects {
 	opacity: 1;
 	background-color: #272727;
 	box-shadow: 0px 0px 60px rgba(192, 192, 192, 0.3);
+}
+
+.project-details div {
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 10px;
 }
 
 .pt-page-2 section {
@@ -477,7 +376,6 @@ section.projects {
 }
 
 .skills-imgs {
-	height: 100%;
 	vertical-align: middle;
 	display: flex;
 	justify-content: space-evenly;
@@ -602,9 +500,8 @@ section.projects {
 
 .cell p {
 	display: flex;
-	font-weight: lighter;
 	font-size: 15px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Gill Sans', sans-serif;
 }
 
 .cell p:last-child {
@@ -812,9 +709,7 @@ nav a:focus {
 
 #service-worker_toast p {
 	color: white;
-	font-weight: lighter;
-	font-size: 14px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
 	margin-right: 10px;
 }
 
