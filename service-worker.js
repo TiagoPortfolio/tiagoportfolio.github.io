@@ -34,7 +34,7 @@ self.addEventListener('install', function (e) {
 				'/images/skills/nodejs.jpg',
 				'/images/skills/sass.svg',
 				'/images/projects/landing_page.jpg',
-				'/images/projects/drumpad.png',
+				'/images/projects/drum-machine.png',
 				'/images/projects/discord.svg',
 			]);
 
