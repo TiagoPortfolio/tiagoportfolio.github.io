@@ -743,8 +743,5 @@ nav a:focus {
 
 .show {
 	opacity: 1 !important;
-}
-
-.hide {
-	opacity: 0 !important;
+	z-index: 1 !important;
 }
