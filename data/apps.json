@@ -143,26 +143,6 @@
     ]
   },
   {
-    "id": "b4e7849b-07ba-55b1-9ed3-c38b878623fe",
-    "name": "lol Calls",
-    "description": "Tools to optimize your call center with voice analytics.",
-    "categories": ["Optimization", "Voice Analytics"],
-    "subscriptions": [
-      {
-        "name": "Trial",
-        "price": 0
-      },
-      {
-        "name": "Professional",
-        "price": 5000
-      },
-      {
-        "name": "Enterprise",
-        "price": 10500
-      }
-    ]
-  },
-  {
     "id": "d8652502-f8f2-5c35-8de5-b9adfebbf4cf",
     "name": "Scripted",
     "description": "Help your agents communicate with customers using scripts.",
