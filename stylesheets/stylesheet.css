@@ -154,8 +154,11 @@ ol {
 }
 
 #main_content_wrap {
-	margin-top: 5%;
 	text-align: center;
+	height: 90vh;
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
 }
 
 #main_content_wrap .inner:first-child {
