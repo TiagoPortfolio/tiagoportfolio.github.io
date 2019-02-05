@@ -158,7 +158,7 @@ ol {
 	height: 90vh;
   display: flex;
   justify-content: center;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
 }
 
 #main_content_wrap .inner:first-child {
