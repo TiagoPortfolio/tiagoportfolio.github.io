@@ -1,4 +1,4 @@
-const CACHE_NAME = 'tiagoportfolio-v22';
+const CACHE_NAME = 'tiagoportfolio-v23';
 
 // Register service worker
 self.addEventListener('install', function (e) {
@@ -40,6 +40,7 @@ self.addEventListener('install', function (e) {
 				'/images/projects/profile_creator.jpg',
 				'/images/projects/quote_machine.jpg',
 				'/images/projects/tesla_battery.jpg',
+				'/images/projects/github-top.jpg',
 				
 			]);
 
