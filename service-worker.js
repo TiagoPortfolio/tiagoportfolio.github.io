@@ -1,4 +1,4 @@
-const CACHE_NAME = 'tiagoportfolio-v23';
+const CACHE_NAME = 'tiagoportfolio-v24';
 
 // Register service worker
 self.addEventListener('install', function (e) {
@@ -33,6 +33,13 @@ self.addEventListener('install', function (e) {
 				'/images/skills/reactjs.svg',
 				'/images/skills/nodejs.jpg',
 				'/images/skills/sass.svg',
+				'/images/skills/formik.png',
+				'/images/skills/grapql.png',
+				'/images/skills/jest.svg',
+				'/images/skills/redux-saga.png',
+				'/images/skills/redux.png',
+				'/images/skills/typescript.png',
+				'/images/skills/webpack.png',
 				'/images/projects/landing_page.jpg',
 				'/images/projects/drum-machine.png',
 				'/images/projects/discord.svg',
